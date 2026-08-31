@@ -32,6 +32,10 @@ text_path = "text"
 
 [paths]
 corpus = "corpus"
+
+[parse]
+backend = "pymupdf4llm"   # pymupdf4llm | docling (drop-in backends, local, no keys)
+
 """
 
 

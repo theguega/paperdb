@@ -12,6 +12,7 @@ from .stages import extract as extract_stage
 from .stages import fetch as fetch_stage
 from .stages import index as index_stage
 from .stages import meta as meta_stage
+from .stages import parse as parse_stage
 from .stages import query as query_stage
 from .stages import resolve as resolve_stage
 from .stages.doctor import doctor as doctor_stage
@@ -85,6 +86,21 @@ def extract_cmd(
 ):
     """Extract card.json via the configured agent CLI (batched abstracts)."""
     r = extract_stage.extract(_corpus(), limit, adapter)
+    _report(r, as_json)
+
+
+@app.command("parse")
+def parse_cmd(
+    id: str = typer.Option(None, "--id", help="Parse a single paper"),
+    all_papers: bool = typer.Option(False, "--all", help="Parse every fetched PDF"),
+    force: bool = typer.Option(False, "--force", help="Re-parse even if paper.md exists"),
+    as_json: bool = typer.Option(False, "--json", help="Machine-readable output"),
+):
+    """Convert paper.pdf -> paper.md with the configured [parse] backend."""
+    if not (id or all_papers):
+        print("give --id <arxiv_id> or --all")
+        raise typer.Exit(1)
+    r = parse_stage.parse(_corpus(), id, force)
     _report(r, as_json)
 
 

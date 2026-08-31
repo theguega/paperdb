@@ -149,15 +149,13 @@ def index(corpus=None) -> dict:
 
 
 def _index_chunks(conn: sqlite3.Connection, corpus) -> int:
-    """Embed paper.md chunks for depth=full papers. Empty at card seed."""
+    """Embed paper.md chunks. Any paper with a markdown body gets indexed."""
     try:
         conn.execute("SELECT 1 FROM chunks LIMIT 1")
     except sqlite3.OperationalError:
         return 0
     docs = []
     for r in load_resolved(corpus):
-        if r.get("depth") != "full":
-            continue
         md = papers_dir(corpus) / r["arxiv_id"] / "paper.md"
         if not md.exists():
             continue

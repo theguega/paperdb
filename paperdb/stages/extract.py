@@ -143,7 +143,6 @@ def _validate(items: list[dict]) -> tuple[dict[str, dict], dict[str, str]]:
     return results, errors
 
 
-
 async def _run_batches(
     corpus, batches: list[list[dict]], adapter, timeout_s: float, raw_prefix: str
 ) -> dict:
