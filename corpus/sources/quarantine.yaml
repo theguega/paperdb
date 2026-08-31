@@ -1,0 +1,79 @@
+- section: VLA Models
+  reason: no arxiv link
+  raw: '- [⭐️] **Gemini Robotics 2**, Gemini Robotics 2: The intelligence layer to
+    power any kind of robot. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://deepmind.google/models/gemini-robotics/)'
+- section: World Action Models
+  reason: no arxiv link
+  raw: '- **Being-H0.7**, Being-H0.7: A Latent World-Action Model from Egocentric
+    Videos. [![arXiv](https://img.shields.io/badge/arXiv-2604-b31b1b.svg)](https://research.beingbeyond.com/projects/being-h07/being-h07.pdf)
+    [![Website](https://img.shields.io/badge/Website-Link-blue)](https://research.beingbeyond.com/being-h07)'
+- section: World Action Models
+  reason: no bold name
+  raw: '- Do World Action Models Generalize Better than VLAs? A Robustness Study.
+    [![arXiv](https://img.shields.io/badge/arXiv-2603.22078-b31b1b.svg)](https://arxiv.org/abs/2603.22078)'
+- section: World Action Models
+  reason: no arxiv link
+  raw: '- [⭐️] **Dyna**, Integrated Architectures for Learning, Planning, and Reacting
+    Based on Approximating Dynamic Programming. [![Paper](https://img.shields.io/badge/Paper-Link-blue)](https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9781558601413500304)'
+- section: Policies
+  reason: no bold name
+  raw: '- [⭐️] Data Scaling Laws in Imitation Learning for Robotic Manipulationy.
+    [![arXiv](https://img.shields.io/badge/arXiv-2410.18647-b31b1b.svg)](https://arxiv.org/abs/2410.18647)'
+- section: Latent Action Models
+  reason: no bold name
+  raw: '- [⭐️] Learning Latent Action World Models In The Wild. [![arXiv](https://img.shields.io/badge/arXiv-2601.05230-b31b1b.svg)](https://arxiv.org/pdf/2601.05230)'
+- section: Human Action Pretraining
+  reason: no arxiv link
+  raw: '- **Being-H0.7**, Being-H0.7: A Latent World-Action Model from Egocentric
+    Videos. [![arXiv](https://img.shields.io/badge/arXiv-2604-b31b1b.svg)](https://research.beingbeyond.com/projects/being-h07/being-h07.pdf)
+    [![Website](https://img.shields.io/badge/Website-Link-blue)](https://research.beingbeyond.com/being-h07)'
+- section: Human Action Pretraining
+  reason: no bold name
+  raw: '- [⭐️] Emergence of Human to Robot Transfer in Vision-Language-Action Models.
+    [![arXiv](https://img.shields.io/badge/arXiv-2512.22414-b31b1b.svg)](https://arxiv.org/abs/2512.22414)
+    [![Website](https://img.shields.io/badge/Website-Link-blue)](https://www.pi.website/research/human_to_robot)'
+- section: Code as Policy
+  reason: no arxiv link
+  raw: '- [⭐️] **Gemini Robotics 2**, Gemini Robotics 2: The intelligence layer to
+    power any kind of robot. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://deepmind.google/models/gemini-robotics/)'
+- section: Survey
+  reason: no bold name
+  raw: '- Data Pyramid for Embodied Manipulation. [![arXiv](https://img.shields.io/badge/arXiv-2607.24744-b31b1b.svg)](https://arxiv.org/abs/2607.24744)
+    [![Website](https://img.shields.io/badge/Website-Link-blue)](https://jasper-aaa.github.io/embodied-data-pyramid/)'
+- section: Survey
+  reason: no bold name
+  raw: '- Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses. [![arXiv](https://img.shields.io/badge/arXiv-2605.02900-b31b1b.svg)](https://arxiv.org/abs/2605.02900)
+    [![Website](https://img.shields.io/badge/Website-Link-blue)](https://x-zheng16.github.io/Awesome-Embodied-AI-Safety/)'
+- section: Survey
+  reason: no bold name
+  raw: '- Vision-Language-Action (VLA) Models: Concepts, Progress, Applications and
+    Challenges. [![arXiv](https://img.shields.io/badge/arXiv-2505.04769-b31b1b.svg)](https://arxiv.org/abs/2505.04769)
+    [![Website](https://img.shields.io/badge/Website-Link-blue)](https://github.com/Applied-AI-Research-Lab/Vision-Language-Action-Models-Concepts-Progress-Applications-and-Challenges)'
+- section: Survey
+  reason: no bold name
+  raw: '- Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms.
+    [![arXiv](https://img.shields.io/badge/arXiv-2604.23775-b31b1b.svg)](https://arxiv.org/abs/2604.23775)
+    [![Website](https://img.shields.io/badge/Website-Link-blue)](https://github.com/LiQiiiii/Awesome-VLA-Safety)'
+- section: Survey
+  reason: no bold name
+  raw: '- A Survey on Vision-Language-Action Models for Embodied AI. [![arXiv](https://img.shields.io/badge/arXiv-2405.14093-b31b1b.svg)](https://arxiv.org/abs/2405.14093)
+    [![Website](https://img.shields.io/badge/Website-Link-blue)](https://github.com/yueen-ma/Awesome-VLA)'
+- section: Robotics Datasets
+  reason: no arxiv link
+  raw: '- **Fourier ActionNet Dataset**, Fourier ActionNet Dataset. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://action-net.org)'
+- section: Ego Human Datasets
+  reason: no arxiv link
+  raw: '- **xperience-10m**, Xperience-10M: The Largest Human Xperience Dataset. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://ropedia.com/blog/20260316_xperience_10m)'
+- section: Physics Engine
+  reason: no arxiv link
+  raw: '- [⭐️] **PhysX**, [![Website](https://img.shields.io/badge/Website-Link-blue)](https://developer.nvidia.com/physx-sdk)'
+- section: Physics Engine
+  reason: no arxiv link
+  raw: '- [⭐️] **MuJoCo**. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://mujoco.org)'
+- section: Physics Engine
+  reason: no arxiv link
+  raw: '- [⭐️] **PyBullet**. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://pybullet.org/wordpress/)'
+- section: Software
+  reason: no arxiv link
+  raw: '- [⭐️] **ROS**, Robot Operating System. [![arXiv](https://img.shields.io/badge/arXiv-2009-b31b1b.svg)](https://ai.stanford.edu/~mquigley/papers/icra2009-ros.pdf)
+    [![Website](https://img.shields.io/badge/Website-Link-blue)](https://www.ros.org)'

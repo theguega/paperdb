@@ -3,5 +3,7 @@ __pycache__/
 .venv/
 .pytest_cache/
 .ruff_cache/
-corpus/
 *.egg-info/
+corpus/.cache/
+corpus/papers/
+corpus/index.db

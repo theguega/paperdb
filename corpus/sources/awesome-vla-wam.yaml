@@ -1,0 +1,1832 @@
+- arxiv_id: '2307.15818'
+  section: VLA Definition
+  short_name: RT-2
+  title: 'RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2602.15922'
+  section: WAM Definition
+  short_name: DreamZero
+  title: World Action Models are Zero-shot Policies
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2303.04137'
+  section: Policy Definition
+  short_name: Diffusion Policy
+  title: 'Diffusion Policy: Visuomotor Policy Learning via Action Diffusion'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2410.11758'
+  section: LAM Definition
+  short_name: LAPA
+  title: Latent Action Pretraining from Videos
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2602.16710'
+  section: HAP Definition
+  short_name: Egoscale
+  title: 'EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2209.07753'
+  section: CaP Definition
+  short_name: Code as Policies
+  title: 'Code as Policies: Language Model Programs for Embodied Control'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2607.15330'
+  section: VLA Models
+  short_name: Xiaomi-Robotics-1
+  title: 'Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K
+    Hours of Real-World Trajectories'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2606.17846'
+  section: VLA Models
+  short_name: Qwen-RobotManip
+  title: 'Qwen-RobotManip Technical Report: Alignment Unlocks Scale for Robotic Manipulation
+    Foundation Models'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2606.20867'
+  section: VLA Models
+  short_name: FOCA-VLA
+  title: 'FOCA: Future-Oriented Conditioning for Data-Efficient Vision-Language-Action
+    Adaptation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2605.30280'
+  section: VLA Models
+  short_name: Qwen-VLA
+  title: 'Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments,
+    and Robot Embodiments'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2605.19282'
+  section: VLA Models
+  short_name: Pion
+  title: 'Rethinking Muon Beyond Pretraining: Spectral Failures and High-Pass Remedies
+    for VLA and RLVR'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2605.02881'
+  section: VLA Models
+  short_name: MolmoAct2
+  title: MolmoAct2 Action Reasoning Models for Real-World Deployment
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2605.03269'
+  section: VLA Models
+  short_name: RLDX-1
+  title: RLDX-1 Technical Report
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2605.11817'
+  section: VLA Models
+  short_name: GridS
+  title: 'See What Matters: Differentiable Grid Sample Pruning for Generalizable Vision-Language-Action
+    Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2604.15483'
+  section: VLA Models
+  short_name: π0.7
+  title: 'π0.7: a Steerable Generalist Robotic Foundation Model with Emergent Capabilities'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2604.20834'
+  section: VLA Models
+  short_name: PokeVLA
+  title: 'PokeVLA: Empowering Pocket-Sized Vision-Language-Action Model with Comprehensive
+    World Knowledge Guidance'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2604.28192'
+  section: VLA Models
+  short_name: LaST-R1
+  title: 'LaST-R1: Reinforcing Robotic Manipulation via Adaptive Physical Latent Reasoning'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2604.11757'
+  section: VLA Models
+  short_name: StarVLA-α
+  title: 'StarVLA-α: Reducing Complexity in Vision-Language-Action Systems'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2604.05014'
+  section: VLA Models
+  short_name: StarVLA
+  title: 'StarVLA: A Lego-like Codebase for Vision-Language-Action Model Developing'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2603.29844'
+  section: VLA Models
+  short_name: DIAL
+  title: 'DIAL: Decoupling Intent and Action via Latent World Modeling for End-to-End
+    VLA'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2602.18532'
+  section: VLA Models
+  short_name: VLANeXt
+  title: 'VLANeXt: Recipes for Building Strong VLA Models'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2602.10556'
+  section: VLA Models
+  short_name: LAP
+  title: 'LAP: Language-Action Pre-Training Enables Zero-shot Cross-Embodiment Transfer'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2602.13710'
+  section: VLA Models
+  short_name: HBVLA
+  title: 'HBVLA: Pushing 1-Bit Post-Training Quantization for Vision-Language-Action
+    Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2602.12281'
+  section: VLA Models
+  short_name: CoVer-VLA
+  title: Scaling Verification Can Be More Effective than Scaling Policy Learning for
+    Vision-Language-Action Alignment
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2602.12062'
+  section: VLA Models
+  short_name: HoloBrain-0
+  title: HoloBrain-0 Technical Report
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2602.11236'
+  section: VLA Models
+  short_name: ABot-M0
+  title: 'ABot-M0: VLA Foundation Model for Robotic Manipulation with Action Manifold
+    Learning'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2602.18224'
+  section: VLA Models
+  short_name: SimVLA
+  title: 'SimVLA: A Simple VLA Baseline for Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2601.22153'
+  section: VLA Models
+  short_name: DynamicVLA
+  title: 'DynamicVLA: A Vision-Language-Action Model for Dynamic Object Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2601.18692'
+  section: VLA Models
+  short_name: Lingbot-VLA
+  title: A Pragmatic VLA Foundation Model
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2601.11404'
+  section: VLA Models
+  short_name: ACoT-VLA
+  title: 'ACoT-VLA: Action Chain-of-Thought for Vision-Language-Action Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2512.14666'
+  section: VLA Models
+  short_name: EVOLVE-VLA
+  title: 'EVOLVE-VLA: Test-Time Training from Environment Feedback for Vision-Language-Action
+    Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2512.04952'
+  section: VLA Models
+  short_name: FASTer
+  title: 'FASTer: Toward Efficient Autoregressive Vision Language Action Modeling
+    via Neural Action Tokenization'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2512.24125'
+  section: VLA Models
+  short_name: GenieReasoner
+  title: Unified Embodied VLM Reasoning with Robotic Action via Autoregressive Discretized
+    Pre-training
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2511.14759'
+  section: VLA Models
+  short_name: π∗0.6
+  title: 'π∗0.6: a VLA That Learns From Experience'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2511.17366'
+  section: VLA Models
+  short_name: METIS
+  title: 'METIS: Multi-Source Egocentric Training for Integrated Dexterous Vision-Language-Action
+    Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2511.18810'
+  section: VLA Models
+  short_name: MergeVLA
+  title: 'MergeVLA: Cross-Skill Model Merging Toward a Generalist Vision-Language-Action
+    Agent'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2511.05275'
+  section: VLA Models
+  short_name: TwinVLA
+  title: 'TwinVLA: Data-Efficient Bimanual Manipulation with Twin Single-Arm Vision-Language-Action
+    Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2511.15605'
+  section: VLA Models
+  short_name: SRPO
+  title: 'SRPO: Self-Referential Policy Optimization for Vision-Language-Action Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2511.18960'
+  section: VLA Models
+  short_name: AVA-VLA
+  title: 'AVA-VLA: Improving Vision-Language-Action models with Active Visual Attention'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2511.14148'
+  section: VLA Models
+  short_name: AsyncVLA
+  title: 'AsyncVLA: Asynchronous Flow Matching for Vision-Language-Action Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2510.13054'
+  section: VLA Models
+  short_name: VLA-0
+  title: 'VLA-0: Building State-of-the-Art VLAs with Zero Modification'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2510.10274'
+  section: VLA Models
+  short_name: X-VLA
+  title: 'X-VLA: Soft-Prompted Transformer as Scalable Cross-Embodiment Vision-Language-Action
+    Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2509.04996'
+  section: VLA Models
+  short_name: FLOWER
+  title: 'FLOWER: Democratizing Generalist Robot Policies with Efficient Vision-Language-Action
+    Flow Policies'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2509.09372'
+  section: VLA Models
+  short_name: VLA-Adapter
+  title: 'VLA-Adapter: An Effective Paradigm for Tiny-Scale Vision-Language-Action
+    Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2509.09674'
+  section: VLA Models
+  short_name: SimpleVLA-RL
+  title: 'SimpleVLA-RL: Scaling VLA Training via Reinforcement Learning'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2509.02055'
+  section: VLA Models
+  short_name: ATE
+  title: 'Align-Then-stEer: Adapting the Vision-Language Action Models through Unified
+    Latent Guidance'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2509.22643'
+  section: VLA Models
+  short_name: VLA-Reasoner
+  title: 'VLA-Reasoner: Empowering Vision-Language-Action Models with Reasoning via
+    Online Monte Carlo Tree Search'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2508.20072'
+  section: VLA Models
+  short_name: Discrete Diffusion VLA
+  title: 'Discrete Diffusion VLA: Bringing Discrete Diffusion to Action Decoding in
+    Vision-Language-Action Policies'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2508.19236'
+  section: VLA Models
+  short_name: MemoryVLA
+  title: 'MemoryVLA: Perceptual-Cognitive Memory in Vision-Language-Action Models
+    for Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2508.10333'
+  section: VLA Models
+  short_name: ReconVLA
+  title: 'ReconVLA: Reconstructive Vision-Language-Action Model as Effective Robot
+    Perceiver'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2508.07917'
+  section: VLA Models
+  short_name: MolmoAct
+  title: 'MolmoAct: Action Reasoning Models that can Reason in Space'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2507.16815'
+  section: VLA Models
+  short_name: ThinkAct
+  title: 'ThinkAct: Vision-Language-Action Reasoning via Reinforced Visual Latent
+    Planning'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2507.09160'
+  section: VLA Models
+  short_name: Tactile-VLA
+  title: 'Tactile-VLA: Unlocking Vision-Language-Action Model''s Physical Knowledge
+    for Tactile Generalization'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.08440'
+  section: VLA Models
+  short_name: TGRPO
+  title: 'TGRPO: Fine-tuning Vision-Language-Action Model via Trajectory-wise Group
+    Relative Policy Optimization'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.01844'
+  section: VLA Models
+  short_name: SmolVLA
+  title: 'SmolVLA: A Vision-Language-Action Model for Affordable and Efficient Robotics'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.22242'
+  section: VLA Models
+  short_name: 4D-VLA
+  title: '4D-VLA: Spatiotemporal Vision-Language-Action Pretraining with Cross-Scene
+    Calibration'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.19816'
+  section: VLA Models
+  short_name: CronusVLA
+  title: 'CronusVLA: Towards Efficient and Robust Manipulation via Multi-Frame Vision-Language-Action
+    Modeling'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.05800'
+  section: VLA Models
+  short_name: 3D CAVLA
+  title: '3D CAVLA: Leveraging Depth and 3D Context to Generalize Vision Language
+    Action Models for Unseen Tasks'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.18719'
+  section: VLA Models
+  short_name: VLA-RL
+  title: 'VLA-RL: Towards Masterful and General Robotic Manipulation with Scalable
+    Reinforcement Learning'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.15660'
+  section: VLA Models
+  short_name: X-ICM
+  title: Exploring the Limits of Vision-Language-Action Manipulations in Cross-task
+    Generalization
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.17016'
+  section: VLA Models
+  short_name: RIPT-VLA
+  title: Interactive Post-Training for Vision-Language-Action Models
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.22159'
+  section: VLA Models
+  short_name: ForceVLA
+  title: 'ForceVLA: Enhancing VLA Models with a Force-aware MoE for Contact-rich Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2504.16054'
+  section: VLA Models
+  short_name: π0.5
+  title: 'π0.5: a Vision-Language-Action Model with Open-World Generalization'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2504.19854'
+  section: VLA Models
+  short_name: NORA
+  title: 'NORA: A Small Open-Sourced Generalist Vision Language Action Model for Embodied
+    Tasks'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2503.20020'
+  section: VLA Models
+  short_name: Gemini Robotics
+  title: 'Gemini Robotics: Bringing AI into the Physical World'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2503.09527'
+  section: VLA Models
+  short_name: CombatVLA
+  title: 'CombatVLA: An Efficient Vision-Language-Action Model for Combat Tasks in
+    3D Action Role-Playing Games'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2502.19645'
+  section: VLA Models
+  short_name: OpenVLA-OFT
+  title: 'Fine-Tuning Vision-Language-Action Models: Optimizing Speed and Success'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2502.14795'
+  section: VLA Models
+  short_name: Humanoid-VLA
+  title: 'Humanoid-VLA: Towards Universal Humanoid Control with Visual Integration'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2502.14420'
+  section: VLA Models
+  short_name: ChatVLA
+  title: 'ChatVLA: Unified Multimodal Understanding and Robot Control with Vision-Language-Action
+    Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2501.15830'
+  section: VLA Models
+  short_name: SpatialVLA
+  title: 'SpatialVLA: Exploring Spatial Representations for Visual-Language-Action
+    Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2501.09747'
+  section: VLA Models
+  short_name: FAST
+  title: 'FAST: Efficient Action Tokenization for Vision-Language-Action Models'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2412.10345'
+  section: VLA Models
+  short_name: TraceVLA
+  title: 'TraceVLA: Visual Trace Prompting Enhances Spatial-Temporal Awareness for
+    Generalist Robotic Policies'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2412.14058'
+  section: VLA Models
+  short_name: RoboVLMs
+  title: 'Towards Generalist Robot Policies: What Matters in Building Vision-Language-Action
+    Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2411.19650'
+  section: VLA Models
+  short_name: CogACT
+  title: 'CogACT: A Foundational Vision-Language-Action Model for Synergizing Cognition
+    and Action in Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2411.19309'
+  section: VLA Models
+  short_name: GRAPE
+  title: 'GRAPE: Generalizing Robot Policy via Preference Alignment'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2410.24164'
+  section: VLA Models
+  short_name: π0
+  title: 'π0: A Vision-Language-Action Flow Model for General Robot Control'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2409.12514'
+  section: VLA Models
+  short_name: TinyVLA
+  title: 'TinyVLA: Towards Fast, Data-Efficient Vision-Language-Action Models for
+    Robotic Manipulation'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2406.09246'
+  section: VLA Models
+  short_name: OpenVLA
+  title: 'OpenVLA: An Open-Source Vision-Language-Action Model'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2403.09631'
+  section: VLA Models
+  short_name: 3D-VLA
+  title: '3D-VLA: A 3D Vision-Language-Action Generative World Model'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2311.01378'
+  section: VLA Models
+  short_name: RoboFlamingo
+  title: Vision-Language Foundation Models as Effective Robot Imitators
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.17030'
+  section: World Models
+  short_name: Qwen-RobotWorld
+  title: 'Qwen-RobotWorld Technical Report: Unifying Embodied World Modeling through
+    Language-Conditioned Video Generation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.02800'
+  section: World Models
+  short_name: Cosmos 3
+  title: 'Cosmos 3: Omnimodal World Models for Physical AI'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2602.06949'
+  section: World Models
+  short_name: DreamDojo
+  title: 'DreamDojo: A Generalist Robot World Model from Large-Scale Human Videos'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2601.03782'
+  section: World Models
+  short_name: PointWorld
+  title: 'PointWorld: Scaling 3D World Models for In-The-Wild Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2601.02427'
+  section: World Models
+  short_name: NitroGen
+  title: 'NitroGen: An Open Foundation Model for Generalist Gaming Agents'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2510.08673'
+  section: World Models
+  short_name: Puffin
+  title: 'Thinking with Camera: A Unified Multimodal Model for Camera-Centric Understanding
+    and Generation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2507.17744'
+  section: World Models
+  short_name: Yume
+  title: 'Yume: An Interactive World Generation Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.09995'
+  section: World Models
+  short_name: PlayerOne
+  title: 'PlayerOne: Egocentric World Simulator'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.18701'
+  section: World Models
+  short_name: Matrix-Game
+  title: 'Matrix-Game: Interactive World Foundation Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2504.12369'
+  section: World Models
+  short_name: WorldMem
+  title: 'WorldMem: Long-term Consistent World Simulation with Memory'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2501.03575'
+  section: World Models
+  short_name: Cosmos
+  title: Cosmos World Foundation Model Platform for Physical AI
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2501.08325'
+  section: World Models
+  short_name: GameFactory
+  title: 'GameFactory: Creating New Games with Generative Interactive Videos'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2412.03568'
+  section: World Models
+  short_name: The Matrix
+  title: 'The Matrix: Infinite-Horizon World Generation with Real-Time Moving Control'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2402.15391'
+  section: World Models
+  short_name: Genie
+  title: 'Genie: Generative Interactive Environments'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2203.01914'
+  section: World Models
+  short_name: Playable Environments
+  title: 'Playable Environments: Video Manipulation in Space and Time'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2101.12195'
+  section: World Models
+  short_name: CADDY
+  title: Playable Video Generation
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '1507.08750'
+  section: World Models
+  short_name: ACVP
+  title: Action-Conditional Video Prediction using Deep Networks in Atari Games
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2608.04404'
+  section: World Action Models
+  short_name: Faster-WAM
+  title: 'Faster-WAM: Efficient Inference-Time Future Conditioning for Robust World
+    Action Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2607.19343'
+  section: World Action Models
+  short_name: Masked Visual Actions
+  title: Masked Visual Actions for Unified World Modeling
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2607.08127'
+  section: World Action Models
+  short_name: Temporal Ratio
+  title: Understanding and Mitigating the Video-Action Generalization Gap via Temporal
+    Ratio
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2607.08639'
+  section: World Action Models
+  short_name: LingBot-VA 2
+  title: Native Video-Action Pretraining for Generalizable Robot Control
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2607.13017'
+  section: World Action Models
+  short_name: FlowWAM
+  title: 'FlowWAM: Optical Flow as a Unified Action Representation for World Action
+    Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2607.06988'
+  section: World Action Models
+  short_name: WAM-TTT
+  title: 'WAM-TTT: Steering World-Action Models by Watching Human Play at Test Time'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.15768'
+  section: World Action Models
+  short_name: LaWAM
+  title: 'LaWAM: Latent World Action Models for Efficient Dynamics-Aware Robot Policies'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.11187'
+  section: World Action Models
+  short_name: Next Forcing
+  title: 'Next Forcing: Causal World Modeling with Multi-Chunk Prediction'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.05254'
+  section: World Action Models
+  short_name: Flash-WAM
+  title: 'Flash-WAM: Modality-Aware Distillation for World Action Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.16533'
+  section: World Action Models
+  short_name: Kairos
+  title: 'Kairos: A Native World Model Stack for Physical AI'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2606.19531'
+  section: World Action Models
+  short_name: ImageWAM
+  title: 'ImageWAM: Do World Action Models Really Need Video Generation, or Just Image
+    Editing?'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.17046'
+  section: World Action Models
+  short_name: GAM
+  title: Geometric Action Model for Robot Policy Learning
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.20562'
+  section: World Action Models
+  short_name: MemoryWAM
+  title: 'MemoryWAM: Efficient World Action Modeling with Persistent Memory'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.01027'
+  section: World Action Models
+  short_name: τ0-WM
+  title: 'τ0-WM: A Unified Video-Action World Model for Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.17906'
+  section: World Action Models
+  short_name: WAM-RL
+  title: 'WAM-RL: World-Action Model Reinforcement Learning with Reconstruction Rewards
+    and Online Video SFT'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.32026'
+  section: World Action Models
+  short_name: AdaJEPA
+  title: 'AdaJEPA: An Adaptive Latent World Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2605.20752'
+  section: World Action Models
+  short_name: GaussianDream
+  title: 'GaussianDream: A Feed-Forward 3D Gaussian World Model for Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2605.27491'
+  section: World Action Models
+  short_name: GE-Sim 2.0
+  title: 'GE-Sim 2.0: A Roadmap Towards Comprehensive Closed-loop Video World Simulators
+    for Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2604.06168'
+  section: World Action Models
+  short_name: Action Images
+  title: 'Action Images: End-to-End Policy Learning via Multiview Video Generation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2604.16391'
+  section: World Action Models
+  short_name: DeFI
+  title: Disentangled Robot Learning via Separate Forward and Inverse Dynamics Pretraining
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2604.01985'
+  section: World Action Models
+  short_name: WAV
+  title: 'World Action Verifier: Self-Improving World Models via Forward-Inverse Asymmetry'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2603.19312'
+  section: World Action Models
+  short_name: LeWorldModel
+  title: 'LeWorldModel: Stable End-to-End Joint-Embedding Predictive Architecture
+    from Pixels'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2603.17240'
+  section: World Action Models
+  short_name: GigaWorld-Policy
+  title: 'GigaWorld-Policy: An Efficient Action-Centered World--Action Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2603.16666'
+  section: World Action Models
+  short_name: Fast-WAM
+  title: 'Fast-WAM: Do World Action Models Need Test-time Future Imagination?'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2602.12063'
+  section: World Action Models
+  short_name: VLAW
+  title: 'VLAW: Iterative Co-Improvement of Vision-Language-Action Policy and World
+    Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2602.12215'
+  section: World Action Models
+  short_name: LDA-1B
+  title: 'LDA-1B: Scaling Latent Dynamics Action Model via Universal Embodied Data
+    Ingestion'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2602.22010'
+  section: World Action Models
+  short_name: WoG
+  title: World Guidance World Modeling in Condition Space for Action Generation
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2602.10098'
+  section: World Action Models
+  short_name: VLA-JEPA
+  title: 'VLA-JEPA: Enhancing Vision-Language-Action Model with Latent World Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2601.16163'
+  section: World Action Models
+  short_name: Cosmos Policy
+  title: 'Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2602.06508'
+  section: World Action Models
+  short_name: World-VLA-Loop
+  title: 'World-VLA-Loop: Closed-Loop Learning of Video World Model and VLA Policy'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2601.21998'
+  section: World Action Models
+  short_name: Lingbot-VA
+  title: Causal World Modeling for Robot Control
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2512.15692'
+  section: World Action Models
+  short_name: mimic-video
+  title: 'mimic-video: Video-Action Models for Generalizable Robot Control Beyond
+    VLAs'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2512.00975'
+  section: World Action Models
+  short_name: MM-ACT
+  title: 'MM-ACT: Learn from Multimodal Parallel Generation to Act'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2511.17502'
+  section: World Action Models
+  short_name: RynnVLA-002
+  title: 'RynnVLA-002: A Unified Vision-Language-Action and World Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2511.09515'
+  section: World Action Models
+  short_name: WMPO
+  title: 'WMPO: World Model-based Policy Optimization for Vision-Language-Action Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2509.24948'
+  section: World Action Models
+  short_name: World-Env
+  title: 'World-Env: Leveraging World Model as a Virtual Environment for VLA Post-Training'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2509.06951'
+  section: World Action Models
+  short_name: F1
+  title: 'F1: A Vision-Language-Action Model Bridging Understanding and Generation
+    to Actions'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2508.18269'
+  section: World Action Models
+  short_name: FlowVLA
+  title: 'FlowVLA: Visual Chain of Thought-based Motion Reasoning for Vision-Language-Action
+    Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2508.00795'
+  section: World Action Models
+  short_name: Video Policy
+  title: Video Generators are Robot Policies
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2507.04447'
+  section: World Action Models
+  short_name: DreamVLA
+  title: 'DreamVLA: A Vision-Language-Action Model Dreamed with Comprehensive World
+    Knowledge'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.19850'
+  section: World Action Models
+  short_name: UniVLA
+  title: Unified Vision-Language-Action Model
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.21539'
+  section: World Action Models
+  short_name: WorldVLA
+  title: 'WorldVLA: Towards Autoregressive Action World Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.06111'
+  section: World Action Models
+  short_name: UniVLA
+  title: 'UniVLA: Learning to Act Anywhere with Task-centric Latent Actions'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.12705'
+  section: World Action Models
+  short_name: DreamGen
+  title: 'DreamGen: Unlocking Generalization in Robot Learning through Video World
+    Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.15659'
+  section: World Action Models
+  short_name: FLARE
+  title: 'FLARE: Robot Learning with Implicit World Modeling'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2504.02792'
+  section: World Action Models
+  short_name: UWM
+  title: 'Unified World Models: Coupling Video and Action Diffusion for Pretraining
+    on Large Robotic Datasets'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2503.00200'
+  section: World Action Models
+  short_name: UVAM
+  title: Unified Video Action Model
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2504.15369'
+  section: World Action Models
+  short_name: Inverse Probabilistic Adaptation
+  title: Solving New Tasks by Adapting Internet Video Knowledge
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2503.22020'
+  section: World Action Models
+  short_name: CoT-VLA
+  title: 'CoT-VLA: Visual Chain-of-Thought Reasoning for Vision-Language-Action Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2501.18867'
+  section: World Action Models
+  short_name: UP-VLA
+  title: 'UP-VLA: A Unified Understanding and Prediction Model for Embodied Agent'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2412.14803'
+  section: World Action Models
+  short_name: VPP
+  title: 'Video Prediction Policy: A Generalist Robot Policy with Predictive Visual
+    Representations'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2412.03572'
+  section: World Action Models
+  short_name: NWM
+  title: Navigation World Models
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2412.15109'
+  section: World Action Models
+  short_name: Seer
+  title: Predictive Inverse Dynamics Models are Scalable Learners for Robotic Manipulation
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2411.00769'
+  section: World Action Models
+  short_name: GameGen-X
+  title: 'GameGen-X: Interactive Open-world Game Video Generation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2410.06158'
+  section: World Action Models
+  short_name: GR-2
+  title: 'GR-2: A Generative Video-Language-Action Model with Web-Scale Knowledge
+    for Robot Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2408.14837'
+  section: World Action Models
+  short_name: GameNGen
+  title: Diffusion Models Are Real-Time Game Engines
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2405.12399'
+  section: World Action Models
+  short_name: DIAMOND
+  title: 'Diffusion for World Modeling: Visual Details Matter in Atari'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2312.13139'
+  section: World Action Models
+  short_name: GR-1
+  title: Unleashing Large-Scale Video Generative Pre-training for Visual Robot Manipulation
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2310.10625'
+  section: World Action Models
+  short_name: VLP
+  title: Video Language Planning
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2310.06114'
+  section: World Action Models
+  short_name: UniSim
+  title: Learning Interactive Real-World Simulators
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2308.01399'
+  section: World Action Models
+  short_name: Dynalang
+  title: Learning to Model the World with Language
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2302.00111'
+  section: World Action Models
+  short_name: UniPi
+  title: Learning Universal Policies via Text-Guided Video Generation
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2301.04104'
+  section: World Action Models
+  short_name: DreamerV3
+  title: Mastering Diverse Domains through World Models
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2206.14176'
+  section: World Action Models
+  short_name: DayDreamer
+  title: 'DayDreamer: World Models for Physical Robot Learning'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2206.14244'
+  section: World Action Models
+  short_name: MWM
+  title: Masked World Models for Visual Control
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2205.09991'
+  section: World Action Models
+  short_name: Diffusers
+  title: Planning with Diffusion for Flexible Behavior Synthesis
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2010.02193'
+  section: World Action Models
+  short_name: DreamerV2
+  title: Mastering Atari with Discrete World Models
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '1903.00374'
+  section: World Action Models
+  short_name: SimPLe
+  title: Model-Based Reinforcement Learning for Atari
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '1912.01603'
+  section: World Action Models
+  short_name: Dreamer
+  title: 'Dream to Control: Learning Behaviors by Latent Imagination'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '1811.04551'
+  section: World Action Models
+  short_name: PlaNet
+  title: Learning Latent Dynamics for Planning from Pixels
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '1803.10122'
+  section: World Action Models
+  short_name: World Models
+  title: World Models
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2606.06904'
+  section: Policies
+  short_name: ActionMap
+  title: 'ActionMap: Robot Policy Learning via Voxel Action Heatmap'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2510.02268'
+  section: Policies
+  short_name: Know Your Camera
+  title: Do You Know Where Your Camera Is? View-Invariant Policy Learning with Camera
+    Conditioning
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2509.18644'
+  section: Policies
+  short_name: State-free Policy
+  title: Do You Need Proprioceptive States in Visuomotor Policies?
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2507.05331'
+  section: Policies
+  short_name: LBM
+  title: A Careful Examination of Large Behavior Models for Multitask Dexterous Manipulation
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.23944'
+  section: Policies
+  short_name: Adapt Your Body
+  title: 'Adapt Your Body: Mitigating Proprioception Shifts in Imitation Learning'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2503.02881'
+  section: Policies
+  short_name: RDP
+  title: 'Reactive Diffusion Policy: Slow-Fast Visual-Tactile Policy Learning for
+    Contact-Rich Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2410.07864'
+  section: Policies
+  short_name: RDT-1B
+  title: 'RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2409.20537'
+  section: Policies
+  short_name: HPT
+  title: Scaling Proprioceptive-Visual Learning with Heterogeneous Pre-trained Transformers
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2407.05996'
+  section: Policies
+  short_name: MDT
+  title: 'Multimodal Diffusion Transformer: Learning Versatile Behavior from Multimodal
+    Goals'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2405.12213'
+  section: Policies
+  short_name: Octo
+  title: 'Octo: An Open-Source Generalist Robot Policy'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2403.08321'
+  section: Policies
+  short_name: ManiGaussian
+  title: 'ManiGaussian: Dynamic Gaussian Splatting for Multi-task Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2403.03954'
+  section: Policies
+  short_name: DP3
+  title: '3D Diffusion Policy: Generalizable Visuomotor Policy Learning via Simple
+    3D Representations'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2306.10007'
+  section: Policies
+  short_name: RPT
+  title: Robot Learning with Sensorimotor Pre-training
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2212.06817'
+  section: Policies
+  short_name: RT-1
+  title: 'RT-1: Robotics Transformer for Real-World Control at Scale'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2209.05451'
+  section: Policies
+  short_name: PerAct
+  title: 'Perceiver-Actor: A Multi-Task Transformer for Robotic Manipulation'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2608.05706'
+  section: Latent Action Models
+  short_name: LAWM-3D
+  title: 'LAWM-3D: Learning 3D-Aware Latent Actions from Human Videos for Generalizable
+    Robot World Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.07100'
+  section: Latent Action Models
+  short_name: LARA
+  title: 'LARA: Latent Action Representation Alignment for Vision-Language-Action
+    Models'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2605.15725'
+  section: Latent Action Models
+  short_name: DiLA
+  title: 'DiLA: Disentangled Latent Action World Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2605.04678'
+  section: Latent Action Models
+  short_name: From Pixels to Tokens
+  title: 'From Pixels to Tokens: A Systematic Study of Latent Action Supervision for
+    Vision-Language-Action Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2603.05815'
+  section: Latent Action Models
+  short_name: HiLAM
+  title: Hierarchical Latent Action Model
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2512.13030'
+  section: Latent Action Models
+  short_name: Motus
+  title: 'Motus: A Unified Latent Action World Model'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2510.26433'
+  section: Latent Action Models
+  short_name: CoLA-World
+  title: Co-Evolving Latent Action World Models
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2507.13340'
+  section: Latent Action Models
+  short_name: LPS
+  title: Latent Policy Steering with Embodiment-Agnostic Pretrained World Models
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.17006'
+  section: Latent Action Models
+  short_name: CoMo
+  title: 'CoMo: Learning Continuous Latent Motion from Internet Videos for Scalable
+    Robot Learning'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2503.14734'
+  section: Latent Action Models
+  short_name: GR00T N1
+  title: 'GR00T N1: An Open Foundation Model for Generalist Humanoid Robots'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2503.18938'
+  section: Latent Action Models
+  short_name: AdaWorld
+  title: 'AdaWorld: Learning Adaptable World Models with Latent Actions'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2412.04445'
+  section: Latent Action Models
+  short_name: Moto
+  title: 'Moto: Latent Motion Token as the Bridging Language for Learning Robot Manipulation
+    from Videos'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2312.10812'
+  section: Latent Action Models
+  short_name: LAPO
+  title: Learning to Act without Actions
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2310.08576'
+  section: Latent Action Models
+  short_name: AVDC
+  title: Learning to Act from Actionless Videos through Dense Correspondences
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '1806.09655'
+  section: Latent Action Models
+  short_name: CLASP
+  title: Learning what you can do before doing anything
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '1805.07914'
+  section: Latent Action Models
+  short_name: ILPO
+  title: Imitating Latent Policies from Observation
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.20521'
+  section: Human Action Pretraining
+  short_name: HumanScale
+  title: 'HumanScale: Egocentric Human Video Can Outperform Real-Robot Data for Embodied
+    Pretraining'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2605.24934'
+  section: Human Action Pretraining
+  short_name: HumanEgo
+  title: 'HumanEgo: Zero-Shot Robot Learning from Minutes of Human Egocentric Videos'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2507.12440'
+  section: Human Action Pretraining
+  short_name: EgoVLA
+  title: 'EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2608.03924'
+  section: Code as Policy
+  short_name: OpenETA
+  title: 'ETA: A New Agentic Paradigm for Embodied Tasks'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2607.08448'
+  section: Code as Policy
+  short_name: Harness VLA
+  title: 'Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives
+    via Memory-Guided Agents'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2603.22435'
+  section: Code as Policy
+  short_name: CaP-X
+  title: 'CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot
+    Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2512.24766'
+  section: Code as Policy
+  short_name: Dream2Flow
+  title: 'Dream2Flow: Bridging Video Generation and Open-World Manipulation with 3D
+    Object Flow'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2409.01652'
+  section: Code as Policy
+  short_name: ReKep
+  title: 'ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for
+    Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2307.05973'
+  section: Code as Policy
+  short_name: VoxPoser
+  title: 'VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language
+    Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2201.07207'
+  section: Code as Policy
+  short_name: Zero-Shot Planner
+  title: 'Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for
+    Embodied Agents'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2606.27375'
+  section: Robotics Datasets
+  short_name: ABC-130k
+  title: Scalable Behavior Cloning with Open Data, Training, and Evaluation
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2601.11421'
+  section: Robotics Datasets
+  short_name: GM100
+  title: 'The Great March 100: 100 Detail-oriented Tasks for Evaluating Embodied AI
+    Agents'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2512.24653'
+  section: Robotics Datasets
+  short_name: RoboMIND 2.0
+  title: 'RoboMIND 2.0: A Multimodal, Bimanual Mobile Manipulation Dataset for Generalizable
+    Embodied Intelligence'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2511.17441'
+  section: Robotics Datasets
+  short_name: RoboCOIN
+  title: 'RoboCOIN: An Open-Sourced Bimanual Robotic Data COllection for INtegrated
+    Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2510.08807'
+  section: Robotics Datasets
+  short_name: Humanoid Everyday
+  title: 'Humanoid Everyday: A Comprehensive Robotic Dataset for Open-World Humanoid
+    Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2509.00576'
+  section: Robotics Datasets
+  short_name: Galaxea
+  title: Galaxea Open-World Dataset and G0 Dual-System VLA Model
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2503.06669'
+  section: Robotics Datasets
+  short_name: AgiBot World
+  title: 'AgiBot World Colosseo: A Large-scale Manipulation Platform for Scalable
+    and Intelligent Embodied Systems'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2412.13877'
+  section: Robotics Datasets
+  short_name: RoboMIND
+  title: 'RoboMIND: Benchmark on Multi-embodiment Intelligence Normative Data for
+    Robot Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2403.12945'
+  section: Robotics Datasets
+  short_name: DROID
+  title: 'DROID: A Large-Scale In-The-Wild Robot Manipulation Dataset'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2310.08864'
+  section: Robotics Datasets
+  short_name: Open X-Embodiment
+  title: 'Open X-Embodiment: Robotic Learning Datasets and RT-X Models'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2307.00595'
+  section: Robotics Datasets
+  short_name: RH20T
+  title: 'RH20T: A Comprehensive Robotic Dataset for Learning Diverse Skills in One-Shot'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2607.14183'
+  section: Ego Human Datasets
+  short_name: Open-AoE
+  title: 'Open-AoE: An Open Egocentric Manipulation Dataset and Toolchain for Embodied
+    Learning'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2607.25895'
+  section: Ego Human Datasets
+  short_name: HiFi-UMI
+  title: 'HiFi-UMI: Learning Deployable Manipulation Policies from High-Fidelity UMI
+    Data Alone'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2606.06194'
+  section: Ego Human Datasets
+  short_name: ActiveMimic
+  title: 'ActiveMimic: Egocentric Video Pretraining with Active Perception'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2605.06747'
+  section: Ego Human Datasets
+  short_name: HumanNet
+  title: 'HumanNet: Scaling Human-centric Video Learning to One Million Hours'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2604.07607'
+  section: Ego Human Datasets
+  short_name: EgoVerse
+  title: 'EgoVerse: An Egocentric Human Dataset for Robot Learning from Around the
+    World'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.11709'
+  section: Ego Human Datasets
+  short_name: EgoDex
+  title: 'EgoDex: Learning Dexterous Manipulation from Large-Scale Egocentric Video'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2110.07058'
+  section: Ego Human Datasets
+  short_name: Ego4D
+  title: 'Ego4D: Around the World in 3,000 Hours of Egocentric Video'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '1706.04261'
+  section: Ego Human Datasets
+  short_name: Something-Something v2
+  title: The "something something" video database for learning and evaluating visual
+    common sense
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2607.04434'
+  section: Benchmark / Environment
+  short_name: RoboDojo
+  title: 'RoboDojo: A Unified Sim-and-Real Benchmark for Comprehensive Evaluation
+    of Generalist Robot Manipulation Policies'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2604.09860'
+  section: Benchmark / Environment
+  short_name: RoboLab
+  title: 'RoboLab: A High-Fidelity Simulation Benchmark for Analysis of Task Generalist
+    Policies'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2602.08971'
+  section: Benchmark / Environment
+  short_name: WorldArena
+  title: 'WorldArena: A Unified Benchmark for Evaluating Perception and Functional
+    Utility of Embodied World Models'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2512.01989'
+  section: Benchmark / Environment
+  short_name: PAI-Bench
+  title: 'PAI-Bench: A Comprehensive Benchmark For Physical AI'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2510.13626'
+  section: Benchmark / Environment
+  short_name: LIBERO-Plus
+  title: 'LIBERO-Plus: In-depth Robustness Analysis of Vision-Language-Action Models'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2510.17950'
+  section: Benchmark / Environment
+  short_name: RoboChallenge
+  title: 'RoboChallenge: Large-scale Real-robot Evaluation of Embodied Policies'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2506.18123'
+  section: Benchmark / Environment
+  short_name: RoboArena
+  title: 'RoboArena: Distributed Real-World Evaluation of Generalist Robot Policies'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2506.18088'
+  section: Benchmark / Environment
+  short_name: RoboTwin 2.0
+  title: 'RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain
+    Randomization for Robust Bimanual Robotic Manipulation'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2406.02523'
+  section: Benchmark / Environment
+  short_name: RoboCasa
+  title: 'RoboCasa: Large-Scale Simulation of Everyday Tasks for Generalist Robots'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2405.05941'
+  section: Benchmark / Environment
+  short_name: SimplerEnv
+  title: Evaluating Real-World Robot Manipulation Policies in Simulation
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2306.03310'
+  section: Benchmark / Environment
+  short_name: LIBERO
+  title: 'LIBERO: Benchmarking Knowledge Transfer for Lifelong Robot Learning'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2305.12821'
+  section: Benchmark / Environment
+  short_name: FurnitureBench
+  title: 'FurnitureBench: Reproducible Real-World Benchmark for Long-Horizon Complex
+    Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2112.03227'
+  section: Benchmark / Environment
+  short_name: CALVIN
+  title: 'CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon
+    Robot Manipulation Tasks'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2003.08515'
+  section: Benchmark / Environment
+  short_name: SAPIEN
+  title: 'SAPIEN: A SimulAted Part-based Interactive ENvironment'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '1909.12271'
+  section: Benchmark / Environment
+  short_name: RLBench
+  title: 'RLBench: The Robot Learning Benchmark & Learning Environment'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2607.02501'
+  section: Software
+  short_name: Embodied.cpp
+  title: 'Embodied.cpp: A Portable Inference Runtime of Embodied AI Models on Heterogeneous
+    Robots'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2505.21864'
+  section: Hardware
+  short_name: DexUMI
+  title: 'DexUMI: Using Human Hand as the Universal Manipulation Interface for Dexterous
+    Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2402.10329'
+  section: Hardware
+  short_name: UMI
+  title: 'Universal Manipulation Interface: In-The-Wild Robot Teaching Without In-The-Wild
+    Robots'
+  starred: true
+  depth: card
+  source: awesome
+- arxiv_id: '2309.13037'
+  section: Hardware
+  short_name: GELLO
+  title: 'GELLO: A General, Low-Cost, and Intuitive Teleoperation Framework for Robot
+    Manipulators'
+  starred: false
+  depth: card
+  source: awesome
+- arxiv_id: '2304.13705'
+  section: Hardware
+  short_name: ALOHA
+  title: Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware
+  starred: true
+  depth: card
+  source: awesome

@@ -1,0 +1,3 @@
+# Manual seed entries. Keys: arxiv_id (required), short_name, title, section, starred, depth (card|full).
+# manual.yaml wins on conflict with awesome-vla-wam.yaml.
+[]
