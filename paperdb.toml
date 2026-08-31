@@ -1,0 +1,26 @@
+[agent]
+adapter = "claude"        # claude | cursor | cline
+concurrency = 2
+timeout_s = 300           # mandatory: cursor print-mode can hang indefinitely
+
+[agent.adapters.claude]
+argv = ["claude", "-p", "--output-format", "json",
+        "--allowedTools", "Read", "--max-turns", "3"]
+prompt = "stdin"
+envelope = "json"
+text_path = "result"
+
+[agent.adapters.cursor]
+argv = ["agent", "-p", "--output-format", "json", "--trust", "--mode", "ask"]
+prompt = "arg"
+envelope = "json"
+text_path = "result"
+
+[agent.adapters.cline]
+argv = ["cline", "--json"]
+prompt = "arg"           # cline 3.x rejects piped stdin in --json mode
+envelope = "ndjson"
+text_path = "text"
+
+[paths]
+corpus = "corpus"
