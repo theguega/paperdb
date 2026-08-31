@@ -1,3 +1,21 @@
-# Manual seed entries. Keys: arxiv_id (required), short_name, title, section, starred, depth (card|full).
+# Manual seed entries. Keys: arxiv_id (required, or omit for slug key + pdf_url),
+# short_name, title, section, starred, depth (card|full), url, pdf_url.
 # manual.yaml wins on conflict with awesome-vla-wam.yaml.
-[]
+- arxiv_id: '2608.10860'
+  short_name: Flex-pi
+  title: Flex-pi
+  url: https://flex-pi.github.io/
+- short_name: Isaac 0.5
+  title: Isaac 0.5
+  url: https://www.perceptron.inc/blog/introducing-isaac-0-5
+  pdf_url: https://pub-d90b81cad7254a1aa6b148ac18153c0c.r2.dev/isaac-0.5.pdf
+- arxiv_id: '2608.03052'
+  short_name: Proprio-State-VLA
+  title: How Should Vision-Language-Action Models Use Proprioceptive State?
+- arxiv_id: '2606.12406'
+  short_name: FACTR2
+  title: FACTR2
+- arxiv_id: '2608.26103'
+  short_name: Zero-WAM
+  title: Zero-WAM
+  url: https://robbyant-research.github.io/Zero-WAM/

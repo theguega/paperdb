@@ -31,6 +31,8 @@ class Paper:
     starred: bool
     depth: str = "card"
     source: str = "awesome"
+    url: str = ""
+    pdf_url: str = ""
     raw: str = field(default="", repr=False)
 
 
@@ -117,20 +119,29 @@ def _dump_yaml(path: Path, obj) -> bool:
 
 
 def load_manual(sources_dir: Path) -> list[Paper]:
+    """Manual entries. arxiv_id is the key; papers without one get a slug key
+    (lowercased short_name) plus an explicit pdf_url - meta skips the arXiv
+    API for those and fetch downloads from pdf_url directly."""
     p = sources_dir / "manual.yaml"
     if not p.exists():
         return []
     out = []
     for e in yaml.safe_load(p.read_text()) or []:
+        name = e.get("short_name") or str(e.get("arxiv_id", ""))
+        arxiv_id = str(e.get("arxiv_id") or "")
+        if not arxiv_id:
+            arxiv_id = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
         out.append(
             Paper(
-                arxiv_id=str(e["arxiv_id"]),
+                arxiv_id=arxiv_id,
                 section=e.get("section", "manual"),
-                short_name=e.get("short_name", e["arxiv_id"]),
+                short_name=name,
                 title=e.get("title", ""),
                 starred=bool(e.get("starred", False)),
                 depth=e.get("depth", "card"),
                 source="manual",
+                url=e.get("url", ""),
+                pdf_url=e.get("pdf_url", ""),
             )
         )
     return out

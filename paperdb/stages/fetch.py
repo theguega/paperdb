@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 
 import httpx
 
@@ -11,8 +12,9 @@ from ..paths import load_resolved, paper_dir, papers_dir
 _DELAY_S = 1.0  # be polite to arXiv between PDF downloads
 
 
-async def _download(client: httpx.AsyncClient, arxiv_id: str, dest, sem: asyncio.Semaphore) -> str:
-    url = f"https://arxiv.org/pdf/{arxiv_id}"
+async def _download(
+    client: httpx.AsyncClient, arxiv_id: str, url: str, dest, sem: asyncio.Semaphore
+) -> str:
     async with sem:
         r = await client.get(url)
         await asyncio.sleep(_DELAY_S)
@@ -29,14 +31,21 @@ def fetch(corpus, limit: int | None = None) -> dict:
     records = load_resolved(corpus)
     if limit:
         records = records[:limit]
-    todo: list[tuple[str, object]] = []
+    todo: list[tuple[str, str, object]] = []  # (id, url, dest)
     skipped = 0
     for r in records:
-        dest = paper_dir(r["arxiv_id"], corpus) / "paper.pdf"
+        d = paper_dir(r["arxiv_id"], corpus)
+        dest = d / "paper.pdf"
         if dest.exists() and dest.stat().st_size > 1000:
             skipped += 1
-        else:
-            todo.append((r["arxiv_id"], dest))
+            continue
+        mp = d / "meta.json"
+        url = f"https://arxiv.org/pdf/{r['arxiv_id']}"
+        if mp.exists():
+            meta_url = json.loads(mp.read_text()).get("pdf_url", "")
+            if meta_url:
+                url = meta_url
+        todo.append((r["arxiv_id"], url, dest))
     papers_dir(corpus).mkdir(parents=True, exist_ok=True)
 
     errors: dict[str, str] = {}
@@ -47,9 +56,9 @@ def fetch(corpus, limit: int | None = None) -> dict:
             timeout=120.0, follow_redirects=True, headers={"User-Agent": "paperdb/0.1"}
         ) as client:
             results = await asyncio.gather(
-                *[_download(client, i, d, sem) for i, d in todo], return_exceptions=True
+                *[_download(client, i, u, d, sem) for i, u, d in todo], return_exceptions=True
             )
-        for (i, _), res in zip(todo, results):
+        for (i, _, _), res in zip(todo, results):
             if isinstance(res, Exception):
                 errors[i] = str(res)[:200]
             elif res != "ok":
