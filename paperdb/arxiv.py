@@ -34,11 +34,7 @@ def parse_feed(xml_text: str) -> dict[str, dict]:
                 {c.get("term") for c in e.findall(f"{ATOM}category") if c.get("term")}
             ),
             "primary_category": next(
-                (
-                    c.get("term")
-                    for c in e.findall(f"{ARXIV}primary_category")
-                    if c.get("term")
-                ),
+                (c.get("term") for c in e.findall(f"{ARXIV}primary_category") if c.get("term")),
                 "",
             ),
             "pdf_url": next(

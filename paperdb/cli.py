@@ -8,6 +8,7 @@ from pathlib import Path
 import typer
 
 from .config import load_config, write_default_config
+from .stages import extract as extract_stage
 from .stages import fetch as fetch_stage
 from .stages import meta as meta_stage
 from .stages import resolve as resolve_stage
@@ -72,6 +73,17 @@ def _report(r: dict, as_json: bool):
             print("missing_from_api:", extra)
         if errors:
             print("errors:", json.dumps(errors, indent=2))
+
+
+@app.command("extract")
+def extract_cmd(
+    limit: int = typer.Option(None, "--limit", help="Only first N papers without cards"),
+    adapter: str = typer.Option(None, "--adapter", help="Override [agent].adapter for this run"),
+    as_json: bool = typer.Option(False, "--json", help="Machine-readable output"),
+):
+    """Extract card.json via the configured agent CLI (batched abstracts)."""
+    r = extract_stage.extract(_corpus(), limit, adapter)
+    _report(r, as_json)
 
 
 def _corpus() -> Path:
