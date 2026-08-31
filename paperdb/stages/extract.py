@@ -115,6 +115,18 @@ async def _invoke_batch(prompt: str, adapter, timeout_s: float) -> tuple[str, li
     raise last_err  # type: ignore[misc]
 
 
+def _sanitize(it: dict) -> dict:
+    """Drop nulls inside eval dicts - a benchmark either has a rate or is absent."""
+    ev = it.get("eval")
+    if isinstance(ev, dict):
+        it["eval"] = {
+            k: {b: v for b, v in (d or {}).items() if v is not None}
+            for k, d in ev.items()
+            if isinstance(d, dict)
+        }
+    return it
+
+
 def _validate(items: list[dict]) -> tuple[dict[str, dict], dict[str, str]]:
     results: dict[str, dict] = {}
     errors: dict[str, str] = {}
@@ -124,11 +136,12 @@ def _validate(items: list[dict]) -> tuple[dict[str, dict], dict[str, str]]:
         aid = str(it["arxiv_id"])
         try:
             results[aid] = Card.model_validate(
-                {k: v for k, v in it.items() if k != "arxiv_id"}
+                _sanitize({k: v for k, v in it.items() if k != "arxiv_id"})
             ).model_dump()
         except ValidationError as e:
             errors[aid] = str(e.errors()[-1])[:300]
     return results, errors
+
 
 
 async def _run_batches(

@@ -10,7 +10,9 @@ import typer
 from .config import load_config, write_default_config
 from .stages import extract as extract_stage
 from .stages import fetch as fetch_stage
+from .stages import index as index_stage
 from .stages import meta as meta_stage
+from .stages import query as query_stage
 from .stages import resolve as resolve_stage
 from .stages.doctor import doctor as doctor_stage
 
@@ -84,6 +86,29 @@ def extract_cmd(
     """Extract card.json via the configured agent CLI (batched abstracts)."""
     r = extract_stage.extract(_corpus(), limit, adapter)
     _report(r, as_json)
+
+
+@app.command("index")
+def index_cmd(as_json: bool = typer.Option(False, "--json", help="Machine-readable output")):
+    """Rebuild corpus/index.db from files (FTS5 + flattened cards)."""
+    r = index_stage.index(_corpus())
+    _report(r, as_json)
+
+
+@app.command("query")
+def query_cmd(
+    text: str = typer.Argument("", help="Free-text search (FTS, falls back to semantic)"),
+    where: str = typer.Option(None, "--where", help="SQL predicate over card columns"),
+    limit: int = typer.Option(20, "--limit"),
+    as_json: bool = typer.Option(False, "--json", help="Machine-readable output"),
+):
+    """Query the corpus: e.g. paperdb query \"flow matching\" --where \"control_hz >= 30\""""
+    rows = query_stage.query(text, where, limit=limit, corpus=_corpus())
+    if as_json:
+        print(json.dumps(rows, indent=2))
+    else:
+        for r in rows:
+            print(f"{r['arxiv_id']:12} {str(r['short_name'])[:24]:24} {r['title'][:70]}")
 
 
 def _corpus() -> Path:
