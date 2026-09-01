@@ -25,7 +25,17 @@ class Open(BaseModel):
 
 
 class Card(BaseModel):
-    family: Literal["vla", "wam", "diffusion-policy", "rl", "world-model", "dataset", "benchmark"]
+    family: Literal[
+        "vla",
+        "wam",
+        "diffusion-policy",
+        "rl",
+        "world-model",
+        "dataset",
+        "benchmark",
+        "control",
+        "library",
+    ]
     backbone: str | None = None  # e.g. "PaliGemma-3B"
     action_head: (
         Literal["flow-matching", "diffusion", "fast-tokens", "ar-bins", "latent", "mlp"] | None

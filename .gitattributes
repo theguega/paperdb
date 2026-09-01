@@ -1,0 +1,3 @@
+corpus/papers/*/paper.md filter=lfs diff=lfs merge=lfs text=false
+corpus/papers/*/card.json filter=lfs diff=lfs merge=lfs text=false
+corpus/papers/*/meta.json filter=lfs diff=lfs merge=lfs text=false

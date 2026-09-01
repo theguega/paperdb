@@ -30,7 +30,7 @@ Output rules (strict):
 - Never ask questions; the record below is all the information that exists.
 
 Per-object schema:
-- "family": one of "vla","wam","diffusion-policy","rl","world-model","dataset","benchmark"
+- "family": one of "vla","wam","diffusion-policy","rl","world-model","dataset","benchmark","control","library"
 - "backbone": string name of the vision-language backbone, or null
 - "action_head": one of "flow-matching","diffusion","fast-tokens","ar-bins","latent","mlp", or null
 - "action_space": one of "joint","ee-delta","ee-abs","latent", or null

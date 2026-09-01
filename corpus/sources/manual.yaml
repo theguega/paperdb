@@ -19,3 +19,39 @@
   short_name: Zero-WAM
   title: Zero-WAM
   url: https://robbyant-research.github.io/Zero-WAM/
+- arxiv_id: '1909.04947'
+  short_name: Crocoddyl
+  title: 'Crocoddyl: An Efficient and Versatile Framework for Multi-Contact Optimal Control'
+  url: https://cmastalli.github.io/publications/crocoddyl20icra.html
+- arxiv_id: '2604.04310'
+  short_name: frax
+  title: 'frax: Fast Robot Kinematics and Dynamics in JAX'
+- arxiv_id: '2511.06141'
+  short_name: PlaCo
+  title: 'PlaCo: a QP-based robot planning and control framework'
+- short_name: Pinocchio
+  title: 'Pinocchio: fast and flexible prototyping of rigid body dynamics algorithms'
+  url: https://laas.hal.science/hal-01866228v2
+  pdf_url: https://laas.hal.science/hal-01866228v2/document
+- arxiv_id: '2603.14482'
+  short_name: V-JEPA-2.1
+  title: 'V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning'
+- arxiv_id: '2506.09985'
+  short_name: V-JEPA-2
+  title: 'V-JEPA 2: Self-Supervised Video Models Enable Understanding, Prediction and Planning'
+- arxiv_id: '2608.27395'
+  short_name: LeVJEPA
+  title: 'LeVJEPA: Efficient & Scalable Video Pretraining without the Heuristics'
+  url: https://levjepa.github.io/
+- arxiv_id: '2606.27317'
+  short_name: OctoSense
+  title: 'OctoSense: Self-Supervised Learning for Multimodal Robot Perception'
+- arxiv_id: '2303.05499'
+  short_name: Grounding-DINO
+  title: 'Grounding DINO: Marrying DINO with Grounded Pre-Training for Open-Set Object Detection'
+- arxiv_id: '2508.10104'
+  short_name: DINOv3
+  title: DINOv3
+- arxiv_id: '2607.05247'
+  short_name: LingBot-Vision
+  title: 'Vision Pretraining for Dense Spatial Perception'

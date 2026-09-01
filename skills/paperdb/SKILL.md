@@ -1,6 +1,6 @@
 ---
 name: paperdb
-description: "Work with the local robotics-paper corpus (paperdb). Use when the agent needs to (1) search or filter papers by topic, family (vla/wam/world-model/diffusion-policy/rl/benchmark/dataset), open-weights, control_hz, data_hours, or any card field; (2) add a paper to the corpus (fetch its PDF, convert it to markdown, and index it); or (3) run the paperdb CLI (resolve/meta/fetch/extract/parse/index/query). Triggers include mentions of 'paperdb', 'add a paper to the corpus', 'search the papers for <topic>', '.claude/skills/paperdb', or the corpus/ dir."
+description: "Work with the local robotics-paper corpus (paperdb). Use when the agent needs to (1) search or filter papers by topic, family (vla/wam/world-model/diffusion-policy/rl/benchmark/dataset/control/library), open-weights, control_hz, data_hours, or any card field; (2) add a paper to the corpus (fetch its PDF, convert it to markdown, and index it); or (3) run the paperdb CLI (resolve/meta/fetch/extract/parse/index/query). Triggers include mentions of 'paperdb', 'add a paper to the corpus', 'search the papers for <topic>', '.claude/skills/paperdb', or the corpus/ dir."
 ---
 
 # paperdb: local robotics-paper corpus
@@ -18,7 +18,7 @@ description: "Work with the local robotics-paper corpus (paperdb). Use when the 
 | More/fewer results | append `--limit N` |
 
 - Filterable card columns: `family, backbone, action_head, action_space, chunk_size, control_hz, open_weights, open_code, open_data, data_hours, data_episodes, data_source`.
-- Common `family` values: `vla, wam, world-model, diffusion-policy, rl, benchmark, dataset`.
+- Common `family` values: `vla, wam, world-model, diffusion-policy, rl, benchmark, dataset, control, library`.
 - Each result is a row with `arxiv_id`; the full text body lives at `corpus/papers/<arxiv_id>/paper.md` - read it when you need to answer from actual paper content.
 - `index.db` is rebuilt from files; if searches look stale, rerun `paperdb index`.
 

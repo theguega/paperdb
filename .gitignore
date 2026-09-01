@@ -5,5 +5,5 @@ __pycache__/
 .ruff_cache/
 *.egg-info/
 corpus/.cache/
-corpus/papers/
+corpus/papers/*/paper.pdf
 corpus/index.db
