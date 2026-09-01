@@ -2473,3 +2473,32 @@
   source: manual
   url: ''
   pdf_url: ''
+- arxiv_id: '2603.02115'
+  section: manual
+  short_name: Robometer
+  title: 'Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory
+    Comparisons'
+  starred: false
+  depth: card
+  source: manual
+  url: https://robometer.github.io/
+  pdf_url: ''
+- arxiv_id: '2606.10305'
+  section: manual
+  short_name: SARM2
+  title: 'SARM2: Multi-Task Stage Aware Reward Modeling for Self Improving Robotic
+    Manipulation'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2509.25358'
+  section: manual
+  short_name: SARM
+  title: 'SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''

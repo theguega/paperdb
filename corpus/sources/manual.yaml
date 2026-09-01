@@ -55,3 +55,13 @@
 - arxiv_id: '2607.05247'
   short_name: LingBot-Vision
   title: 'Vision Pretraining for Dense Spatial Perception'
+- arxiv_id: '2603.02115'
+  short_name: Robometer
+  title: 'Robometer: Scaling General-Purpose Robotic Reward Models via Trajectory Comparisons'
+  url: https://robometer.github.io/
+- arxiv_id: '2606.10305'
+  short_name: SARM2
+  title: 'SARM2: Multi-Task Stage Aware Reward Modeling for Self Improving Robotic Manipulation'
+- arxiv_id: '2509.25358'
+  short_name: SARM
+  title: 'SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation'
