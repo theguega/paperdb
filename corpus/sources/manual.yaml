@@ -65,3 +65,19 @@
 - arxiv_id: '2509.25358'
   short_name: SARM
   title: 'SARM: Stage-Aware Reward Modeling for Long Horizon Robot Manipulation'
+- arxiv_id: '2606.23085'
+  short_name: Foresight
+  title: 'Foresight: Failure Detection for Long-Horizon Robotic Manipulation with Action-Conditioned World Model Latents'
+  url: https://haoranzhangumich.github.io/Forsight_web
+- arxiv_id: '2410.04640'
+  short_name: Sentinel
+  title: 'Unpacking Failure Modes of Generative Policies: Runtime Monitoring of Consistency and Progress'
+  url: https://sites.google.com/stanford.edu/sentinel
+- arxiv_id: '2503.08558'
+  short_name: FAIL-Detect
+  title: 'Can We Detect Failures Without Failure Data? Uncertainty-Aware Runtime Failure Detection for Imitation Learning Policies'
+  url: https://cxu-tri.github.io/FAIL-Detect-Website/
+- arxiv_id: '2510.09459'
+  short_name: FIPER
+  title: 'Failure Prediction at Runtime for Generative Robot Policies'
+  url: https://tum-lsy.github.io/fiper_website/
