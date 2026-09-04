@@ -2541,3 +2541,21 @@
   source: manual
   url: https://tum-lsy.github.io/fiper_website/
   pdf_url: ''
+- arxiv_id: '2607.15275'
+  section: manual
+  short_name: RoboTTT
+  title: 'RoboTTT: Context Scaling for Robot Policies'
+  starred: false
+  depth: card
+  source: manual
+  url: https://research.nvidia.com/labs/gear/robottt/
+  pdf_url: ''
+- arxiv_id: '2608.21204'
+  section: manual
+  short_name: Q-Planning
+  title: 'Beyond Imitation: Self-Improving Robot Policies via Off-Policy Q-Planning'
+  starred: false
+  depth: card
+  source: manual
+  url: https://q-planning.github.io/
+  pdf_url: ''

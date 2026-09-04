@@ -2,6 +2,10 @@
   reason: no arxiv link
   raw: '- [⭐️] **Gemini Robotics 2**, Gemini Robotics 2: The intelligence layer to
     power any kind of robot. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://deepmind.google/models/gemini-robotics/)'
+- section: VLA Models
+  reason: no arxiv link
+  raw: '- **Provael**, Provael: an adversarial evaluation harness for vision-language-action
+    policies. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://github.com/provael/provael)'
 - section: World Action Models
   reason: no arxiv link
   raw: '- **Being-H0.7**, Being-H0.7: A Latent World-Action Model from Egocentric
