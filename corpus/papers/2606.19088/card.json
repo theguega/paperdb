@@ -1,0 +1,31 @@
+{
+  "status": "ok",
+  "card": {
+    "family": "control",
+    "backbone": null,
+    "action_head": null,
+    "action_space": null,
+    "chunk_size": null,
+    "control_hz": null,
+    "embodiment": [],
+    "data": {
+      "hours": null,
+      "episodes": null,
+      "source": null
+    },
+    "eval": {
+      "sim": {},
+      "real": {}
+    },
+    "open": {
+      "weights": null,
+      "code": "https://resireg.github.io",
+      "data": null
+    },
+    "compute": null,
+    "limits": [
+      "Dense VLM embeddings are noisy and lack spatial consistency",
+      "Real-world manipulation results are only qualitative"
+    ]
+  }
+}

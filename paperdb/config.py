@@ -34,7 +34,11 @@ text_path = "text"
 corpus = "corpus"
 
 [parse]
-backend = "pymupdf4llm"   # pymupdf4llm | docling (drop-in backends, local, no keys)
+# hf reads arXiv's HTML via the Hugging Face CLI - no PDF needed. Papers the Hub
+# can't serve (most pre-2022, un-indexed IDs) fall back to fallback_backend,
+# which downloads the PDF on demand.
+backend = "hf"                       # hf | pymupdf4llm | docling
+fallback_backend = "pymupdf4llm"     # pymupdf4llm | docling (local, no keys)
 
 """
 

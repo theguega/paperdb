@@ -1,0 +1,35 @@
+{
+  "status": "ok",
+  "card": {
+    "family": "vla",
+    "backbone": null,
+    "action_head": null,
+    "action_space": null,
+    "chunk_size": null,
+    "control_hz": null,
+    "embodiment": [
+      "xArm7"
+    ],
+    "data": {
+      "hours": null,
+      "episodes": null,
+      "source": null
+    },
+    "eval": {
+      "sim": {},
+      "real": {
+        "xArm7 (architecture 1, baseline)": 0.28,
+        "xArm7 (architecture 1, Anchor-Align)": 0.54,
+        "xArm7 (architecture 2, baseline)": 0.37,
+        "xArm7 (architecture 2, Anchor-Align)": 0.6
+      }
+    },
+    "open": {
+      "weights": null,
+      "code": null,
+      "data": null
+    },
+    "compute": null,
+    "limits": []
+  }
+}

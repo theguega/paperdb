@@ -1,0 +1,31 @@
+{
+  "status": "ok",
+  "card": {
+    "family": "world-model",
+    "backbone": null,
+    "action_head": "latent",
+    "action_space": "latent",
+    "chunk_size": null,
+    "control_hz": null,
+    "embodiment": [],
+    "data": {
+      "hours": null,
+      "episodes": null,
+      "source": null
+    },
+    "eval": {
+      "sim": {},
+      "real": {}
+    },
+    "open": {
+      "weights": null,
+      "code": null,
+      "data": null
+    },
+    "compute": null,
+    "limits": [
+      "LAPO struggles in the presence of action-correlated distractors",
+      "Latent action learning requires ground-truth action supervision when distractors are present"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "arxiv_id": "2505.04769",
+  "title": "Vision-Language-Action (VLA) Models: Concepts, Progress, Applications and Challenges",
+  "abstract": "Vision-Language-Action (VLA) models mark a transformative advancement in artificial intelligence, aiming to unify perception, natural language understanding, and embodied action within a single computational framework. This foundational review presents a comprehensive synthesis of recent advancements in Vision-Language-Action models, systematically organized across five thematic pillars that structure the landscape of this rapidly evolving field. We begin by establishing the conceptual foundations of VLA systems, tracing their evolution from cross-modal learning architectures to generalist agents that tightly integrate vision-language models (VLMs), action planners, and hierarchical controllers. Our methodology adopts a rigorous literature review framework, covering over 80 VLA models published in the past three years. Key progress areas include architectural innovations, efficient training strategies, and real-time inference accelerations. We explore diverse application domains such as autonomous vehicles, medical and industrial robotics, precision agriculture, humanoid robotics, and augmented reality. We analyzed challenges and propose solutions including agentic adaptation and cross-embodiment planning. Furthermore, we outline a forward-looking roadmap where VLA models, VLMs, and agentic AI converge to strengthen socially aligned, adaptive, and general-purpose embodied agents. This work, is expected to serve as a foundational reference for advancing intelligent, real-world robotics and artificial general intelligence. The project repository is available on GitHub as https://github.com/Applied-AI-Research-Lab/Vision-Language-Action-Models-Concepts-Progress-Applications-and-Challenges. [Index Terms: Vision Language Action, VLA, Vision Language Models, VLMs, Action Tokenization, NLP]",
+  "authors": [
+    "Ranjan Sapkota",
+    "Yang Cao",
+    "Konstantinos I. Roumeliotis",
+    "Manoj Karkee"
+  ],
+  "published": "2025-05-07T19:46:43Z",
+  "updated": "2026-01-29T23:20:23Z",
+  "categories": [
+    "cs.CV"
+  ],
+  "primary_category": "cs.CV",
+  "pdf_url": "https://arxiv.org/pdf/2505.04769v2",
+  "abs_url": "https://arxiv.org/abs/2505.04769",
+  "ai_summary": "A comprehensive review presents advancements in Vision-Language-Action models, covering innovations, training strategies, and real-time applications across various domains, while addressing challenges and proposing future solutions.",
+  "ai_keywords": [
+    "Vision-Language-Action",
+    "Agentic AI",
+    "AI Agents",
+    "Vision-Language Models",
+    "cross-modal learning",
+    "hierarchical controllers",
+    "real-time control",
+    "multimodal action representation",
+    "system scalability",
+    "generalization",
+    "ethical deployment",
+    "neuro-symbolic planning"
+  ],
+  "upvotes": 10,
+  "hf_url": "https://huggingface.co/papers/2505.04769"
+}

@@ -7,3 +7,4 @@ __pycache__/
 corpus/.cache/
 corpus/papers/*/paper.pdf
 corpus/index.db
+notes/

@@ -1,0 +1,34 @@
+{
+  "arxiv_id": "2605.29605",
+  "title": "VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models",
+  "abstract": "Task-success confidence estimation for Vision-Language-Action (VLA) models provides a crucial task-level signal for monitoring manipulation in open-world environments and supporting downstream decision-making. Existing methods typically construct task-success confidence from action-token probabilities. However, such probabilities are not naturally available in flow-matching policies, limiting their applicability to mainstream flow-matching VLAs. To address this issue, we propose VLAConf, a two-stage representation-level confidence framework that operates on frozen pretrained VLA representations. A step-conditioned Coin-Flip Network learns an uncalibrated inverse success-support score from successful demonstrations, while a low-capacity calibrator fitted on outcome-labeled successful and failed rollouts maps the aggregated score to task-success probability. Experimental results on the LIBERO benchmark demonstrate that VLAConf improves online task-success confidence estimation over alternative approaches. We further demonstrate its utility in selective expert assistance, where confidence-triggered handoffs improve task success over no intervention. Its applicability is also evaluated in real-robot experiments. To access the source code and supplementary videos, visit https://sites.google.com/view/vlaconf.",
+  "authors": [
+    "Dehao Huang",
+    "Aoxiang Gu",
+    "Chengjie Zhang",
+    "Bolin Zou",
+    "Wenlong Dong",
+    "Zilang Cen",
+    "Yue Wang",
+    "Hong Zhang"
+  ],
+  "published": "2026-05-28T08:42:12Z",
+  "updated": "2026-08-17T02:14:52Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "primary_category": "cs.RO",
+  "pdf_url": "https://arxiv.org/pdf/2605.29605v2",
+  "abs_url": "https://arxiv.org/abs/2605.29605",
+  "ai_summary": "VLAConf estimates manipulation confidence for vision-language-action models in one forward pass using frozen internal representations and step-conditioned modeling, improving efficiency and calibration.",
+  "ai_keywords": [
+    "Vision-Language-Action models",
+    "confidence estimation",
+    "one-class discriminative confidence",
+    "frozen pretrained representations",
+    "step-conditioned modeling",
+    "anomaly scores",
+    "post-hoc calibration"
+  ],
+  "hf_url": "https://huggingface.co/papers/2605.29605"
+}

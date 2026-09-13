@@ -1,0 +1,70 @@
+{
+  "arxiv_id": "2410.18647",
+  "title": "Data Scaling Laws in Imitation Learning for Robotic Manipulation",
+  "abstract": "Data scaling has revolutionized fields like natural language processing and computer vision, providing models with remarkable generalization capabilities. In this paper, we investigate whether similar data scaling laws exist in robotics, particularly in robotic manipulation, and whether appropriate data scaling can yield single-task robot policies that can be deployed zero-shot for any object within the same category in any environment. To this end, we conduct a comprehensive empirical study on data scaling in imitation learning. By collecting data across numerous environments and objects, we study how a policy's generalization performance changes with the number of training environments, objects, and demonstrations. Throughout our research, we collect over 40,000 demonstrations and execute more than 15,000 real-world robot rollouts under a rigorous evaluation protocol. Our findings reveal several intriguing results: the generalization performance of the policy follows a roughly power-law relationship with the number of environments and objects. The diversity of environments and objects is far more important than the absolute number of demonstrations; once the number of demonstrations per environment or object reaches a certain threshold, additional demonstrations have minimal effect. Based on these insights, we propose an efficient data collection strategy. With four data collectors working for one afternoon, we collect sufficient data to enable the policies for two tasks to achieve approximately 90% success rates in novel environments with unseen objects.",
+  "authors": [
+    "Fanqi Lin",
+    "Yingdong Hu",
+    "Pingyue Sheng",
+    "Chuan Wen",
+    "Jiacheng You",
+    "Yang Gao"
+  ],
+  "published": "2024-10-24T11:19:30Z",
+  "updated": "2026-06-26T02:30:53Z",
+  "categories": [
+    "cs.RO"
+  ],
+  "primary_category": "cs.RO",
+  "pdf_url": "https://arxiv.org/pdf/2410.18647v4",
+  "abs_url": "https://arxiv.org/abs/2410.18647",
+  "ai_summary": "Research on data scaling in robotic manipulation reveals that generalization performance improves with environmental and object diversity rather than the number of demonstrations, leading to efficient data collection strategies for zero-shot deployment.",
+  "ai_keywords": [
+    "data scaling",
+    "imitation learning",
+    "generalization performance",
+    "power-law relationship",
+    "data collection strategy",
+    "zero-shot deployment"
+  ],
+  "upvotes": 8,
+  "linked_datasets": [
+    {
+      "id": "Fanqi-Lin/GoPro-Raw-Videos",
+      "author": "Fanqi-Lin",
+      "downloads": 4097,
+      "gated": false,
+      "last_modified": "2024-11-13T08:48:12+00:00",
+      "likes": 3,
+      "private": false
+    },
+    {
+      "id": "OpenEAI/OpenEAI-Dataset",
+      "author": "OpenEAI",
+      "downloads": 3431,
+      "gated": false,
+      "last_modified": "2026-02-25T02:12:11+00:00",
+      "likes": 2,
+      "private": false
+    },
+    {
+      "id": "Fanqi-Lin/Processed-Task-Dataset",
+      "author": "Fanqi-Lin",
+      "downloads": 291,
+      "gated": false,
+      "last_modified": "2024-11-13T08:15:20+00:00",
+      "likes": 9,
+      "private": false
+    },
+    {
+      "id": "ad1t7a/UMI-Fanqi-Processed-Task-Dataset",
+      "author": "ad1t7a",
+      "downloads": 66,
+      "gated": false,
+      "last_modified": "2025-12-21T13:20:44+00:00",
+      "likes": 0,
+      "private": false
+    }
+  ],
+  "hf_url": "https://huggingface.co/papers/2410.18647"
+}

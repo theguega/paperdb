@@ -1,0 +1,30 @@
+{
+  "status": "ok",
+  "card": {
+    "family": "rl",
+    "backbone": null,
+    "action_head": null,
+    "action_space": null,
+    "chunk_size": null,
+    "control_hz": null,
+    "embodiment": [],
+    "data": {
+      "hours": null,
+      "episodes": null,
+      "source": "in-house"
+    },
+    "eval": {
+      "sim": {},
+      "real": {}
+    },
+    "open": {
+      "weights": null,
+      "code": "https://hil-serl.github.io/",
+      "data": null
+    },
+    "compute": null,
+    "limits": [
+      "Requires human demonstrations and in-the-loop human corrections"
+    ]
+  }
+}

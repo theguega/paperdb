@@ -98,3 +98,38 @@ def test_manual_merge_wins(tmp_path):
     assert {m.arxiv_id for m in manual} == {"2402.15391", "1111.11111"}
     assert manual[0].short_name == "Genie-2"
     assert manual[0].depth == "full"
+
+
+def test_entry_without_bold_name_is_recovered_from_title():
+    """Upstream isn't consistent about **Bold** names; the arXiv link identifies
+    the paper, so such entries must not be quarantined."""
+    from paperdb.stages.resolve import parse_readme
+
+    md = (
+        "## World Action Models\n"
+        "- [⭐️] Learning Latent Action World Models In The Wild. "
+        "[![arXiv](https://img.shields.io/badge/arXiv-2601.05230-b31b1b.svg)]"
+        "(https://arxiv.org/abs/2601.05230)\n"
+    )
+    papers, quarantined = parse_readme(md)
+    assert quarantined == []
+    assert len(papers) == 1
+    p = papers[0]
+    assert p.arxiv_id == "2601.05230"
+    assert p.short_name == "Learning Latent Action World Models In The Wild"
+    assert p.title == "Learning Latent Action World Models In The Wild"
+    assert p.starred is True
+
+
+def test_entry_without_any_arxiv_link_is_still_quarantined():
+    """Tooling entries (MuJoCo, ROS) have no paper to ingest."""
+    from paperdb.stages.resolve import parse_readme
+
+    md = (
+        "## Software\n"
+        "- [⭐️] **MuJoCo**. "
+        "[![Website](https://img.shields.io/badge/Website-Link-blue)](https://mujoco.org)\n"
+    )
+    papers, quarantined = parse_readme(md)
+    assert papers == []
+    assert [q.reason for q in quarantined] == ["no arxiv link"]

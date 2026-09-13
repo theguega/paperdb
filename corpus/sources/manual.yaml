@@ -89,3 +89,54 @@
   short_name: Q-Planning
   title: 'Beyond Imitation: Self-Improving Robot Policies via Off-Policy Q-Planning'
   url: https://q-planning.github.io/
+- arxiv_id: '2412.07762'
+  short_name: WSRL
+  title: 'Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline Data'
+- arxiv_id: '2605.16154'
+  short_name: PCM
+  title: 'Learn Where Outcomes Diverge: Efficient VLA RL via Probabilistic Chunk Masking'
+- arxiv_id: '2607.12892'
+  short_name: UR-VC
+  title: 'Unsupervised Robotic Value Correction for Time-Derived Progress Proxies'
+- arxiv_id: '2210.00030'
+  short_name: VIP
+  title: 'VIP: Towards Universal Visual Reward and Representation via Value-Implicit Pre-Training'
+- arxiv_id: '2306.00958'
+  short_name: LIV
+  title: 'LIV: Language-Image Representations and Rewards for Robotic Control'
+- arxiv_id: '1904.07846'
+  short_name: TCC
+  title: 'Temporal Cycle-Consistency Learning'
+- arxiv_id: '1707.05300'
+  short_name: Reverse-Curriculum
+  title: 'Reverse Curriculum Generation for Reinforcement Learning'
+- arxiv_id: '2410.21845'
+  short_name: HIL-SERL
+  title: 'Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning'
+- arxiv_id: '2401.16013'
+  short_name: SERL
+  title: 'SERL: A Software Suite for Sample-Efficient Robotic Reinforcement Learning'
+- arxiv_id: '2501.16664'
+  short_name: iRe-VLA
+  title: 'Improving Vision-Language-Action Model with Online Reinforcement Learning'
+- arxiv_id: '2412.09858'
+  short_name: RLDG
+  title: 'RLDG: Robotic Generalist Policy Distillation via Reinforcement Learning'
+- arxiv_id: '2606.05468'
+  short_name: FlowPRO
+  title: 'FlowPRO: Reward-Free Reinforced Fine-Tuning of Flow-Matching VLAs via Proximalized Preference Optimization'
+- arxiv_id: '2604.23073'
+  short_name: RL-Token
+  title: 'RL Token: Bootstrapping Online RL with Vision-Language-Action Models'
+- arxiv_id: '2606.06493'
+  short_name: HANDOFF
+  title: 'HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers'
+- arxiv_id: '2606.19088'
+  short_name: ReSiReg
+  title: 'ReSiReg: Towards Spatially Consistent Semantics in Language-Conditioned Robotic Tasks'
+- arxiv_id: '2607.13429'
+  short_name: Anchor-Align
+  title: 'Generalizable VLA Finetuning via Representation Anchoring and Language-Action Alignment'
+- arxiv_id: '2604.20246'
+  short_name: Cortex-2.0
+  title: 'Cortex 2.0: Grounding World Models in Real-World Industrial Deployment'

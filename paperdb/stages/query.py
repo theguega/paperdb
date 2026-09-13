@@ -60,9 +60,14 @@ def _fts(conn: sqlite3.Connection, text: str, limit: int) -> list[str]:
 
 def _semantic(conn: sqlite3.Connection, text: str, limit: int) -> list[str]:
     try:
+        conn.enable_load_extension(True)
+        import sqlite_vec
+
+        sqlite_vec.load(conn)
+        conn.enable_load_extension(False)
         conn.execute("SELECT 1 FROM chunks LIMIT 1")
-    except sqlite3.OperationalError:
-        return []  # no depth=full papers yet
+    except (ImportError, AttributeError, sqlite3.OperationalError):
+        return []  # sqlite-vec unavailable or no indexed chunks
     from fastembed import TextEmbedding
 
     model = TextEmbedding(model_name="BAAI/bge-small-en-v1.5")

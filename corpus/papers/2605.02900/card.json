@@ -1,0 +1,33 @@
+{
+  "status": "ok",
+  "card": {
+    "family": "benchmark",
+    "backbone": null,
+    "action_head": null,
+    "action_space": null,
+    "chunk_size": null,
+    "control_hz": null,
+    "embodiment": [],
+    "data": {
+      "hours": null,
+      "episodes": null,
+      "source": null
+    },
+    "eval": {
+      "sim": {},
+      "real": {}
+    },
+    "open": {
+      "weights": null,
+      "code": null,
+      "data": null
+    },
+    "compute": null,
+    "limits": [
+      "Fragility of multimodal perception fusion",
+      "Instability of planning under jailbreak attacks",
+      "Trustworthiness of human-agent interaction in open-ended scenarios",
+      "Fragmented literature across subfields"
+    ]
+  }
+}

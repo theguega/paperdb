@@ -52,6 +52,16 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2609.02546'
+  section: VLA Models
+  short_name: ZETA
+  title: 'ZETA: A Controlled Study of Zero-Shot Cross-Embodiment VLA Transfer for
+    Tabletop Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
 - arxiv_id: '2607.15330'
   section: VLA Models
   short_name: Xiaomi-Robotics-1
@@ -87,6 +97,15 @@
   short_name: Qwen-VLA
   title: 'Qwen-VLA: Unifying Vision-Language-Action Modeling across Tasks, Environments,
     and Robot Embodiments'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2605.29605'
+  section: VLA Models
+  short_name: VLAConf
+  title: 'VLAConf: Calibrated Task-Success Confidence for Vision-Language-Action Models'
   starred: false
   depth: card
   source: awesome
@@ -181,6 +200,16 @@
   short_name: DIAL
   title: 'DIAL: Decoupling Intent and Action via Latent World Modeling for End-to-End
     VLA'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2603.22760'
+  section: VLA Models
+  short_name: SG-VLA
+  title: 'SG-VLA: Learning Spatially-Grounded Vision-Language-Action Models for Mobile
+    Manipulation'
   starred: false
   depth: card
   source: awesome
@@ -914,6 +943,15 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2608.26103'
+  section: manual
+  short_name: Zero-WAM
+  title: Zero-WAM
+  starred: false
+  depth: card
+  source: manual
+  url: https://robbyant-research.github.io/Zero-WAM/
+  pdf_url: ''
 - arxiv_id: '2608.04404'
   section: World Action Models
   short_name: Faster-WAM
@@ -1133,6 +1171,15 @@
   short_name: Fast-WAM
   title: 'Fast-WAM: Do World Action Models Need Test-time Future Imagination?'
   starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2603.22078'
+  section: World Action Models
+  short_name: Do World Action Models Generalize Better than VLAs? A Robustness Study
+  title: Do World Action Models Generalize Better than VLAs? A Robustness Study
+  starred: false
   depth: card
   source: awesome
   url: ''
@@ -1626,6 +1673,15 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2410.18647'
+  section: Policies
+  short_name: Data Scaling Laws in Imitation Learning for Robotic Manipulationy
+  title: Data Scaling Laws in Imitation Learning for Robotic Manipulationy
+  starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
 - arxiv_id: '2410.07864'
   section: Policies
   short_name: RDT-1B
@@ -1757,6 +1813,15 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2601.05230'
+  section: Latent Action Models
+  short_name: Learning Latent Action World Models In The Wild
+  title: Learning Latent Action World Models In The Wild
+  starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
 - arxiv_id: '2512.13030'
   section: Latent Action Models
   short_name: Motus
@@ -1807,6 +1872,15 @@
   section: Latent Action Models
   short_name: AdaWorld
   title: 'AdaWorld: Learning Adaptable World Models with Latent Actions'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2502.00379'
+  section: Latent Action Models
+  short_name: LAOM
+  title: Latent Action Learning Requires Supervision in the Presence of Distractors
   starred: false
   depth: card
   source: awesome
@@ -1873,6 +1947,15 @@
   short_name: HumanEgo
   title: 'HumanEgo: Zero-Shot Robot Learning from Minutes of Human Egocentric Videos'
   starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2512.22414'
+  section: Human Action Pretraining
+  short_name: Emergence of Human to Robot Transfer in Vision-Language-Action Models
+  title: Emergence of Human to Robot Transfer in Vision-Language-Action Models
+  starred: true
   depth: card
   source: awesome
   url: ''
@@ -1951,6 +2034,54 @@
   title: 'Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for
     Embodied Agents'
   starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2607.24744'
+  section: Survey
+  short_name: Data Pyramid for Embodied Manipulation
+  title: Data Pyramid for Embodied Manipulation
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2605.02900'
+  section: Survey
+  short_name: 'Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses'
+  title: 'Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2505.04769'
+  section: Survey
+  short_name: 'Vision-Language-Action (VLA) Models: Concepts, Progress, Applications
+    and Challenges'
+  title: 'Vision-Language-Action (VLA) Models: Concepts, Progress, Applications and
+    Challenges'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2604.23775'
+  section: Survey
+  short_name: 'Vision-Language-Action Safety: Threats, Challenges, Evaluations, and
+    Mechanisms'
+  title: 'Vision-Language-Action Safety: Threats, Challenges, Evaluations, and Mechanisms'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2405.14093'
+  section: Survey
+  short_name: A Survey on Vision-Language-Action Models for Embodied AI
+  title: A Survey on Vision-Language-Action Models for Embodied AI
+  starred: false
   depth: card
   source: awesome
   url: ''
@@ -2156,6 +2287,16 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2603.01229'
+  section: Benchmark / Environment
+  short_name: RMBench
+  title: 'RMBench: Memory-Dependent Robotic Manipulation Benchmark with Insights into
+    Policy Design'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
 - arxiv_id: '2602.08971'
   section: Benchmark / Environment
   short_name: WorldArena
@@ -2208,6 +2349,16 @@
   title: 'RoboTwin 2.0: A Scalable Data Generator and Benchmark with Strong Domain
     Randomization for Robust Bimanual Robotic Manipulation'
   starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2412.13211'
+  section: Benchmark / Environment
+  short_name: ManiSkill-HAB
+  title: 'ManiSkill-HAB: A Benchmark for Low-Level Manipulation in Home Rearrangement
+    Tasks'
+  starred: false
   depth: card
   source: awesome
   url: ''
@@ -2361,15 +2512,6 @@
   depth: card
   source: manual
   url: ''
-  pdf_url: ''
-- arxiv_id: '2608.26103'
-  section: manual
-  short_name: Zero-WAM
-  title: Zero-WAM
-  starred: false
-  depth: card
-  source: manual
-  url: https://robbyant-research.github.io/Zero-WAM/
   pdf_url: ''
 - arxiv_id: '1909.04947'
   section: manual
@@ -2558,4 +2700,164 @@
   depth: card
   source: manual
   url: https://q-planning.github.io/
+  pdf_url: ''
+- arxiv_id: '2412.07762'
+  section: manual
+  short_name: WSRL
+  title: Efficient Online Reinforcement Learning Fine-Tuning Need Not Retain Offline
+    Data
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2605.16154'
+  section: manual
+  short_name: PCM
+  title: 'Learn Where Outcomes Diverge: Efficient VLA RL via Probabilistic Chunk Masking'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2607.12892'
+  section: manual
+  short_name: UR-VC
+  title: Unsupervised Robotic Value Correction for Time-Derived Progress Proxies
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2210.00030'
+  section: manual
+  short_name: VIP
+  title: 'VIP: Towards Universal Visual Reward and Representation via Value-Implicit
+    Pre-Training'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2306.00958'
+  section: manual
+  short_name: LIV
+  title: 'LIV: Language-Image Representations and Rewards for Robotic Control'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '1904.07846'
+  section: manual
+  short_name: TCC
+  title: Temporal Cycle-Consistency Learning
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '1707.05300'
+  section: manual
+  short_name: Reverse-Curriculum
+  title: Reverse Curriculum Generation for Reinforcement Learning
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2410.21845'
+  section: manual
+  short_name: HIL-SERL
+  title: Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement
+    Learning
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2401.16013'
+  section: manual
+  short_name: SERL
+  title: 'SERL: A Software Suite for Sample-Efficient Robotic Reinforcement Learning'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2501.16664'
+  section: manual
+  short_name: iRe-VLA
+  title: Improving Vision-Language-Action Model with Online Reinforcement Learning
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2412.09858'
+  section: manual
+  short_name: RLDG
+  title: 'RLDG: Robotic Generalist Policy Distillation via Reinforcement Learning'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2606.05468'
+  section: manual
+  short_name: FlowPRO
+  title: 'FlowPRO: Reward-Free Reinforced Fine-Tuning of Flow-Matching VLAs via Proximalized
+    Preference Optimization'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2604.23073'
+  section: manual
+  short_name: RL-Token
+  title: 'RL Token: Bootstrapping Online RL with Vision-Language-Action Models'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2606.06493'
+  section: manual
+  short_name: HANDOFF
+  title: 'HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary
+    Teachers'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2606.19088'
+  section: manual
+  short_name: ReSiReg
+  title: 'ReSiReg: Towards Spatially Consistent Semantics in Language-Conditioned
+    Robotic Tasks'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2607.13429'
+  section: manual
+  short_name: Anchor-Align
+  title: Generalizable VLA Finetuning via Representation Anchoring and Language-Action
+    Alignment
+  starred: false
+  depth: card
+  source: manual
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2604.20246'
+  section: manual
+  short_name: Cortex-2.0
+  title: 'Cortex 2.0: Grounding World Models in Real-World Industrial Deployment'
+  starred: false
+  depth: card
+  source: manual
+  url: ''
   pdf_url: ''

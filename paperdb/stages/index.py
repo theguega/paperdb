@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import json
 import sqlite3
+from pathlib import Path
 
 from ..paths import corpus_dir, load_resolved, papers_dir
 
@@ -67,13 +68,13 @@ def _schema(conn: sqlite3.Connection):
 
 def index(corpus=None) -> dict:
     corpus = corpus or corpus_dir()
+    records = load_resolved(corpus)
     db_path = corpus / DB_NAME
-    if db_path.exists():
-        db_path.unlink()  # derived index: always rebuild from files
+    for side in (db_path, Path(f"{db_path}-wal"), Path(f"{db_path}-shm")):
+        side.unlink(missing_ok=True)  # derived index: always rebuild from files
     conn = _connect(db_path)
     _schema(conn)
 
-    records = load_resolved(corpus)
     n_cards = 0
     for r in records:
         d = papers_dir(corpus) / r["arxiv_id"]

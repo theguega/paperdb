@@ -88,14 +88,22 @@ def parse_readme(text: str) -> tuple[list[Paper], list[Quarantined]]:
             quarantined.append(Quarantined(section, f"malformed arxiv id {arxiv_id!r}", raw))
             continue
         nm = NAME_RE.search(line)
-        if not nm:
-            quarantined.append(Quarantined(section, "no bold name", raw))
-            continue
-        title = _title_after_name(line, nm.end())
+        if nm:
+            short_name = nm.group(1).strip()
+            title = _title_after_name(line, nm.end())
+        else:
+            # Upstream isn't consistent about **Bold** names, but the arXiv link
+            # is what identifies the paper - losing it is worse than a long
+            # short_name, so fall back to the title text.
+            title = _title_after_name(line, line.index("- ") + 2).lstrip("⭐️[] ").strip()
+            if not title:
+                quarantined.append(Quarantined(section, "no bold name and no title", raw))
+                continue
+            short_name = title
         p = Paper(
             arxiv_id=arxiv_id,
             section=section,
-            short_name=nm.group(1).strip(),
+            short_name=short_name,
             title=title,
             starred="⭐" in line,
             raw=raw,

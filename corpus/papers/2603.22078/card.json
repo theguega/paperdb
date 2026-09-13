@@ -1,0 +1,31 @@
+{
+  "status": "ok",
+  "card": {
+    "family": "benchmark",
+    "backbone": null,
+    "action_head": null,
+    "action_space": null,
+    "chunk_size": null,
+    "control_hz": null,
+    "embodiment": [],
+    "data": {
+      "hours": null,
+      "episodes": null,
+      "source": null
+    },
+    "eval": {
+      "sim": {
+        "RoboTwin 2.0-Plus (LingBot-VA)": 74.2,
+        "LIBERO-Plus (Cosmos-Policy)": 82.2
+      },
+      "real": {}
+    },
+    "open": {
+      "weights": null,
+      "code": "https://robot-robustness.github.io/RoboTwin2.0-Plus/",
+      "data": null
+    },
+    "compute": null,
+    "limits": []
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "status": "ok",
+  "card": {
+    "family": "dataset",
+    "backbone": null,
+    "action_head": null,
+    "action_space": null,
+    "chunk_size": null,
+    "control_hz": null,
+    "embodiment": [],
+    "data": {
+      "hours": null,
+      "episodes": 40000,
+      "source": "in-house"
+    },
+    "eval": {
+      "sim": {},
+      "real": {
+        "novel environments with unseen objects (two tasks)": 90.0
+      }
+    },
+    "open": {
+      "weights": null,
+      "code": null,
+      "data": null
+    },
+    "compute": null,
+    "limits": []
+  }
+}

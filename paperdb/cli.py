@@ -48,20 +48,26 @@ def resolve(as_json: bool = typer.Option(False, "--json", help="Machine-readable
 @app.command("meta")
 def meta_cmd(
     limit: int = typer.Option(None, "--limit", help="Only first N papers"),
+    enrich: bool = typer.Option(
+        False, "--enrich", help="Backfill Hub extras (ai_summary, ai_keywords) onto existing meta"
+    ),
     as_json: bool = typer.Option(False, "--json", help="Machine-readable output"),
 ):
-    """Fetch arXiv API metadata for resolved papers (3s between requests)."""
-    r = meta_stage.meta(_corpus(), limit)
+    """Fetch paper metadata (arXiv API, Hugging Face Hub for extras and misses)."""
+    r = meta_stage.meta(_corpus(), limit, enrich)
     _report(r, as_json)
 
 
 @app.command("fetch")
 def fetch_cmd(
     limit: int = typer.Option(None, "--limit", help="Only first N papers"),
+    all_papers: bool = typer.Option(
+        False, "--all", help="Download even for papers that already have paper.md"
+    ),
     as_json: bool = typer.Option(False, "--json", help="Machine-readable output"),
 ):
-    """Download paper.pdf for papers with meta (bounded concurrency)."""
-    r = fetch_stage.fetch(_corpus(), limit)
+    """Download paper.pdf; skips papers that already have text (bounded concurrency)."""
+    r = fetch_stage.fetch(_corpus(), limit, all_papers)
     _report(r, as_json)
 
 
@@ -94,13 +100,14 @@ def parse_cmd(
     id: str = typer.Option(None, "--id", help="Parse a single paper"),
     all_papers: bool = typer.Option(False, "--all", help="Parse every fetched PDF"),
     force: bool = typer.Option(False, "--force", help="Re-parse even if paper.md exists"),
+    backend: str = typer.Option(None, "--backend", help="Override [parse].backend for this run"),
     as_json: bool = typer.Option(False, "--json", help="Machine-readable output"),
 ):
-    """Convert paper.pdf -> paper.md with the configured [parse] backend."""
+    """Build paper.md with the configured [parse] backend (hf, else PDF conversion)."""
     if not (id or all_papers):
         print("give --id <arxiv_id> or --all")
         raise typer.Exit(1)
-    r = parse_stage.parse(_corpus(), id, force)
+    r = parse_stage.parse(_corpus(), id, force, backend)
     _report(r, as_json)
 
 
