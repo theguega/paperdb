@@ -52,11 +52,30 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2609.03715'
+  section: VLA Models
+  short_name: MINERVA
+  title: 'MINERVA: How Small Can a Manipulation Policy Be and Still Solve LIBERO?'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
 - arxiv_id: '2609.02546'
   section: VLA Models
   short_name: ZETA
   title: 'ZETA: A Controlled Study of Zero-Shot Cross-Embodiment VLA Transfer for
     Tabletop Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2607.27205'
+  section: VLA Models
+  short_name: TurboVLA
+  title: 'TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX 4090
+    with <1 GB VRAM'
   starred: false
   depth: card
   source: awesome
@@ -68,6 +87,16 @@
   title: 'Xiaomi-Robotics-1: Scaling Vision-Language-Action Models with over 100K
     Hours of Real-World Trajectories'
   starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2607.04517'
+  section: VLA Models
+  short_name: VLA Grounder
+  title: 'VLA Grounder: Language-Conditioning Space Optimization for Black-Box VLA
+    Models'
+  starred: false
   depth: card
   source: awesome
   url: ''
@@ -210,6 +239,16 @@
   short_name: SG-VLA
   title: 'SG-VLA: Learning Spatially-Grounded Vision-Language-Action Models for Mobile
     Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2603.01549'
+  section: VLA Models
+  short_name: Pri4R
+  title: 'Pri4R: Learning World Dynamics for Vision-Language-Action Models with Privileged
+    4D Representation'
   starred: false
   depth: card
   source: awesome
@@ -784,6 +823,15 @@
   short_name: RoboFlamingo
   title: Vision-Language Foundation Models as Effective Robot Imitators
   starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2609.04196'
+  section: World Models
+  short_name: Puffin-World
+  title: 'Puffin-World: Scaling a Unified Multimodal Model with Native 3D World States'
+  starred: true
   depth: card
   source: awesome
   url: ''
@@ -1748,6 +1796,15 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2304.13705'
+  section: Policies
+  short_name: ACT
+  title: Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware
+  starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
 - arxiv_id: '2212.06817'
   section: Policies
   short_name: RT-1
@@ -1771,6 +1828,16 @@
   short_name: LAWM-3D
   title: 'LAWM-3D: Learning 3D-Aware Latent Actions from Human Videos for Generalizable
     Robot World Models'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2607.11397'
+  section: Latent Action Models
+  short_name: WALA
+  title: WALA Learning Executable Latent Actions from Action-Labeled Demonstrations
+    and Action-Free Videos
   starred: false
   depth: card
   source: awesome
@@ -1966,6 +2033,15 @@
   short_name: EgoVLA
   title: 'EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos'
   starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2609.10522'
+  section: Code as Policy
+  short_name: Show-Harness
+  title: 'Show-Harness: Just a VLM Agent Can Play Robots'
+  starred: false
   depth: card
   source: awesome
   url: ''
@@ -2465,15 +2541,6 @@
   title: 'GELLO: A General, Low-Cost, and Intuitive Teleoperation Framework for Robot
     Manipulators'
   starred: false
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2304.13705'
-  section: Hardware
-  short_name: ALOHA
-  title: Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware
-  starred: true
   depth: card
   source: awesome
   url: ''

@@ -1,0 +1,20 @@
+{
+  "arxiv_id": "2607.04517",
+  "title": "VLA Grounder: Language-Conditioning Space Optimization for Black-Box VLA Models",
+  "abstract": "Vision-Language-Action (VLA) models are commonly treated as end-to-end action policies conditioned on natural-language task descriptions. In practice, however, their behavior often depends sharply on how the instruction is phrased, suggesting that language is not merely a task label but an optimizable conditioning input. We study whether frozen VLA policies can be improved by optimizing language space rather than updating action weights. Our method introduces a language-conditioning space policy that translates a human instruction into a short VLA-grounded command using object appearance, spatial relations, and target-grounding cues. The language-conditioning space policy is initialized with a failure-derived command-space prior and optimized with reinforcement learning from sparse task-completion rewards, while the downstream VLA remains fully frozen. This yields language-conditioning space optimization: RL discovers which VLA-grounded commands best elicit successful behavior from the frozen action policy. Experiments on RL4VLA and VL-Think show that language-conditioning space optimization improves success on instruction-sensitive, symbolic, and multi-object manipulation tasks, demonstrating that language can serve as an optimizable variable for a robot foundation models. Website: https://tttonyalpha.github.io/vla_grounder",
+  "authors": [
+    "Damir Shodiev",
+    "Aleksei Staroverov",
+    "Nikita Kachaev",
+    "Alexey K. Kovalev",
+    "Aleksandr I. Panov"
+  ],
+  "published": "2026-07-05T21:41:25Z",
+  "updated": "2026-07-05T21:41:25Z",
+  "categories": [
+    "cs.AI"
+  ],
+  "primary_category": "cs.AI",
+  "pdf_url": "https://arxiv.org/pdf/2607.04517v1",
+  "abs_url": "https://arxiv.org/abs/2607.04517"
+}

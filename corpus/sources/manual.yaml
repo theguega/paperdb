@@ -140,3 +140,25 @@
 - arxiv_id: '2604.20246'
   short_name: Cortex-2.0
   title: 'Cortex 2.0: Grounding World Models in Real-World Industrial Deployment'
+- arxiv_id: '2607.18236'
+  short_name: Patch-Policy
+  title: 'Patch Policy: Efficient Embodied Control via Dense Visual Representations'
+- short_name: OM-1
+  title: OM-1
+  url: https://www.rewardai.com/blog/OM-1/
+  pdf_url: https://www.rewardai.com/blog/OM-1/
+- short_name: Skild-S1
+  title: Skild S1
+  url: https://www.skild.ai/blogs/s1
+  pdf_url: https://www.skild.ai/blogs/s1
+- short_name: Gen-1.5
+  title: Generalist Gen-1.5
+  url: https://generalistai.com/blog/gen-1.5
+  pdf_url: https://generalistai.com/blog/gen-1.5
+- arxiv_id: '2607.06403'
+  short_name: LingBot-VLA-2
+  title: 'From Foundation to Application: Improving VLA Models in Practice'
+- arxiv_id: '2606.27375'
+  short_name: ABC-130k
+  title: Scalable Behavior Cloning with Open Data, Training, and Evaluation
+  url: https://abc.bot/
