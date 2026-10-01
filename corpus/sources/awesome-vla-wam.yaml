@@ -16,6 +16,15 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2209.07753'
+  section: Robotic Agentics Definition
+  short_name: Code as Policies
+  title: 'Code as Policies: Language Model Programs for Embodied Control'
+  starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
 - arxiv_id: '2303.04137'
   section: Policy Definition
   short_name: Diffusion Policy
@@ -38,15 +47,6 @@
   section: HAP Definition
   short_name: Egoscale
   title: 'EgoScale: Scaling Dexterous Manipulation with Diverse Egocentric Human Data'
-  starred: true
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2209.07753'
-  section: CaP Definition
-  short_name: Code as Policies
-  title: 'Code as Policies: Language Model Programs for Embodied Control'
   starred: true
   depth: card
   source: awesome
@@ -991,6 +991,15 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2609.27455'
+  section: World Action Models
+  short_name: LeWAM
+  title: Latent Evolving World Action Models
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
 - arxiv_id: '2608.26103'
   section: World Action Models
   short_name: Zero-WAM
@@ -1666,6 +1675,84 @@
   source: awesome
   url: ''
   pdf_url: ''
+- arxiv_id: '2609.10522'
+  section: Robotic Agentics
+  short_name: Show-Harness
+  title: 'Show-Harness: Just a VLM Agent Can Play Robots'
+  starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2608.03924'
+  section: Robotic Agentics
+  short_name: OpenETA
+  title: 'ETA: A New Agentic Paradigm for Embodied Tasks'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2607.08448'
+  section: Robotic Agentics
+  short_name: Harness VLA
+  title: 'Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives
+    via Memory-Guided Agents'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2603.22435'
+  section: Robotic Agentics
+  short_name: CaP-X
+  title: 'CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot
+    Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2512.24766'
+  section: Robotic Agentics
+  short_name: Dream2Flow
+  title: 'Dream2Flow: Bridging Video Generation and Open-World Manipulation with 3D
+    Object Flow'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2409.01652'
+  section: Robotic Agentics
+  short_name: ReKep
+  title: 'ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for
+    Robotic Manipulation'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2307.05973'
+  section: Robotic Agentics
+  short_name: VoxPoser
+  title: 'VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language
+    Models'
+  starred: false
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
+- arxiv_id: '2201.07207'
+  section: Robotic Agentics
+  short_name: Zero-Shot Planner
+  title: 'Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for
+    Embodied Agents'
+  starred: true
+  depth: card
+  source: awesome
+  url: ''
+  pdf_url: ''
 - arxiv_id: '2606.06904'
   section: Policies
   short_name: ActionMap
@@ -2032,84 +2119,6 @@
   section: Human Action Pretraining
   short_name: EgoVLA
   title: 'EgoVLA: Learning Vision-Language-Action Models from Egocentric Human Videos'
-  starred: true
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2609.10522'
-  section: Code as Policy
-  short_name: Show-Harness
-  title: 'Show-Harness: Just a VLM Agent Can Play Robots'
-  starred: false
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2608.03924'
-  section: Code as Policy
-  short_name: OpenETA
-  title: 'ETA: A New Agentic Paradigm for Embodied Tasks'
-  starred: false
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2607.08448'
-  section: Code as Policy
-  short_name: Harness VLA
-  title: 'Harness VLA: Steering Frozen VLAs into Reliable Manipulation Primitives
-    via Memory-Guided Agents'
-  starred: false
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2603.22435'
-  section: Code as Policy
-  short_name: CaP-X
-  title: 'CaP-X: A Framework for Benchmarking and Improving Coding Agents for Robot
-    Manipulation'
-  starred: false
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2512.24766'
-  section: Code as Policy
-  short_name: Dream2Flow
-  title: 'Dream2Flow: Bridging Video Generation and Open-World Manipulation with 3D
-    Object Flow'
-  starred: false
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2409.01652'
-  section: Code as Policy
-  short_name: ReKep
-  title: 'ReKep: Spatio-Temporal Reasoning of Relational Keypoint Constraints for
-    Robotic Manipulation'
-  starred: false
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2307.05973'
-  section: Code as Policy
-  short_name: VoxPoser
-  title: 'VoxPoser: Composable 3D Value Maps for Robotic Manipulation with Language
-    Models'
-  starred: false
-  depth: card
-  source: awesome
-  url: ''
-  pdf_url: ''
-- arxiv_id: '2201.07207'
-  section: Code as Policy
-  short_name: Zero-Shot Planner
-  title: 'Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for
-    Embodied Agents'
   starred: true
   depth: card
   source: awesome

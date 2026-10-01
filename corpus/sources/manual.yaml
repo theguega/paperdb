@@ -162,3 +162,9 @@
   short_name: ABC-130k
   title: Scalable Behavior Cloning with Open Data, Training, and Evaluation
   url: https://abc.bot/
+- arxiv_id: '2609.34085'
+  short_name: AD-E2E-JEPA
+  title: 'AD-E2E-JEPA: A Joint-Embedding Predictive Architecture For End-to-End Autonomous Driving'
+- arxiv_id: '2609.31394'
+  short_name: InternW0-Delta
+  title: 'InternW0-Δ: A World Action Model Bridging Predictive Dynamics and Actions with 20K+ Hours of Open Data'

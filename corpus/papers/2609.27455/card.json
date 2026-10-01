@@ -1,0 +1,30 @@
+{
+  "status": "ok",
+  "card": {
+    "family": "wam",
+    "backbone": null,
+    "action_head": null,
+    "action_space": null,
+    "chunk_size": null,
+    "control_hz": null,
+    "embodiment": [],
+    "data": {
+      "hours": null,
+      "episodes": null,
+      "source": null
+    },
+    "eval": {
+      "sim": {
+        "RoboTwin 2.0": 92.28
+      },
+      "real": {}
+    },
+    "open": {
+      "weights": null,
+      "code": null,
+      "data": null
+    },
+    "compute": null,
+    "limits": []
+  }
+}

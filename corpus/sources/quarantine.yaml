@@ -15,15 +15,15 @@
   reason: no arxiv link
   raw: '- [⭐️] **Dyna**, Integrated Architectures for Learning, Planning, and Reacting
     Based on Approximating Dynamic Programming. [![Paper](https://img.shields.io/badge/Paper-Link-blue)](https://www.sciencedirect.com/science/chapter/edited-volume/abs/pii/B9781558601413500304)'
+- section: Robotic Agentics
+  reason: no arxiv link
+  raw: '- [⭐️] **Gemini Robotics 2**, Gemini Robotics 2: The intelligence layer to
+    power any kind of robot. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://deepmind.google/models/gemini-robotics/)'
 - section: Human Action Pretraining
   reason: no arxiv link
   raw: '- **Being-H0.7**, Being-H0.7: A Latent World-Action Model from Egocentric
     Videos. [![arXiv](https://img.shields.io/badge/arXiv-2604-b31b1b.svg)](https://research.beingbeyond.com/projects/being-h07/being-h07.pdf)
     [![Website](https://img.shields.io/badge/Website-Link-blue)](https://research.beingbeyond.com/being-h07)'
-- section: Code as Policy
-  reason: no arxiv link
-  raw: '- [⭐️] **Gemini Robotics 2**, Gemini Robotics 2: The intelligence layer to
-    power any kind of robot. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://deepmind.google/models/gemini-robotics/)'
 - section: Robotics Datasets
   reason: no arxiv link
   raw: '- **Fourier ActionNet Dataset**, Fourier ActionNet Dataset. [![Website](https://img.shields.io/badge/Website-Link-blue)](https://action-net.org)'

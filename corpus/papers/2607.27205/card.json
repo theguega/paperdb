@@ -1,0 +1,30 @@
+{
+  "status": "ok",
+  "card": {
+    "family": "vla",
+    "backbone": null,
+    "action_head": null,
+    "action_space": null,
+    "chunk_size": null,
+    "control_hz": 32.0,
+    "embodiment": [],
+    "data": {
+      "hours": null,
+      "episodes": null,
+      "source": null
+    },
+    "eval": {
+      "sim": {
+        "LIBERO": 97.7
+      },
+      "real": {}
+    },
+    "open": {
+      "weights": null,
+      "code": "https://github.com/H-EmbodVis/TurboVLA",
+      "data": null
+    },
+    "compute": null,
+    "limits": []
+  }
+}
