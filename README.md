@@ -1,61 +1,77 @@
 # paperdb
 
-Local corpus of robotics papers (VLA, world-action models, control) that an agent can query.
+A personal paper library: one Rust binary, a git-synced folder of plain files,
+and an agent skill to fill it.
 
-## Pipeline
+- **Your selection only.** You find something worth reading (paper, blog post,
+  report), your agent runs `paperdb add`. `paperdb discover` suggests new papers
+  like the ones you keep; nothing enters without you.
+- **Plain files.** `papers/<id>/paper.json` (metadata, tags, note, card) and
+  `papers/<id>/paper.md` (full text). Diffable, greppable, and readable without
+  the tool.
+- **Every machine.** The library is a git repo; `paperdb sync` pulls and pushes.
+  The search index is a cache, rebuilt automatically when files change.
 
-One command per stage, each takes `--json`:
-
-1. `resolve` - git-pulls awesome-vla-wam, parses entries, merges `manual.yaml`
-2. `meta` - fetches arXiv API metadata, enriched with Hugging Face Hub extras
-3. `parse` - builds `paper.md` (Hub markdown, else PDF conversion)
-4. `extract` - builds structured `card.json` via an agent CLI (claude/cursor/cline)
-5. `index` - rebuilds `corpus/index.db` (FTS5 + flattened cards + sqlite-vec chunks)
-6. `query` - free-text and/or structured search
-
-`fetch` still exists for bulk PDF pre-download, but the pipeline no longer needs
-it: `parse` downloads a PDF on demand when it has to fall back.
-
-## Usage
+## Install
 
 ```bash
-paperdb resolve
-paperdb meta
-paperdb parse --all
-paperdb extract
-paperdb index
-paperdb query "flow matching" --where "family = 'vla'"
+cargo install --git https://github.com/theguega/paperdb
+paperdb init                      # first machine: new library at ~/papers
+paperdb init <library-git-url>    # other machines: clone it
+paperdb skill install             # agent skill -> ~/.claude/skills/paperdb
 ```
 
-## Where paper text comes from
+Runtime needs `git` and `curl`. Papers the Hugging Face Hub can't serve as
+markdown (mostly pre-2022) are converted from PDF with `uvx` (pymupdf4llm) or,
+failing that, poppler's `pdftotext`. Set `PAPERDB_LIBRARY` to put the library
+somewhere other than `~/papers`.
 
-`parse` has two routes, chosen by `[parse] backend` in `paperdb.toml`:
+## Use
 
-- **`hf`** (default) - `hf papers read <id>` returns arXiv's HTML rendering as
-  markdown. No PDF, about a second per paper. Requires the Hugging Face CLI:
-  `curl -LsSf https://hf.co/cli/install.sh | bash`.
-- **`pymupdf4llm`** / **`docling`** - convert a local `paper.pdf`.
+```bash
+paperdb add 2410.24164 --name pi0 --tag vla     # arXiv id, arXiv/HF URL
+paperdb add https://www.pi.website/blog/pi05 --title "π0.5" --name pi05-blog --tag blog
+paperdb search "flow matching" --tag vla
+paperdb search "" --where "family = 'vla' AND open_weights = 1"
+paperdb show pi0 --text
+paperdb discover                                # new papers like your library
+paperdb sync
+```
 
-The Hub serves roughly 3 in 4 of this corpus. It has no HTML for most pre-2022
-papers and doesn't index every arXiv ID, so anything it misses falls through to
-`fallback_backend`, which downloads the PDF on demand. Set `backend =
-"pymupdf4llm"` to skip the Hub entirely and work fully offline from PDFs.
+`paperdb help` lists everything. In practice your agent does most of this
+through the skill (`skill/SKILL.md`, compiled into the binary): adding papers
+you mention, writing cards from the full text, triaging the inbox, and
+answering from the papers.
 
-Two Hub quirks the wrapper handles, both of which would otherwise corrupt the
-corpus silently: a handful of IDs exit 0 with a few hundred bytes of an SVG
-filename instead of a paper (rejected by a size floor), and concurrent requests
-are throttled with an opaque "Request ID" error rather than a 429 (calls are
-serialised and retried). Note that the Hub flattens tables into space-separated
-text, where `pymupdf4llm` keeps pipe-table structure - if a paper's numbers
-matter more than its prose, `parse --id <id> --backend pymupdf4llm --force`
-re-does that one from the PDF.
+## Library layout
 
-Re-running `resolve` is how the curated list is refreshed: it pulls upstream
-and re-derives `resolved.yaml`. Entries with an arXiv link are kept even without
-a `**Bold**` name; `quarantine.yaml` collects only entries with no arXiv link
-(tooling, websites, dataset pages), which have no paper to ingest.
+```text
+~/papers/
+  papers/<id>/paper.json   record: source, title, name, authors, tags, note, card
+  papers/<id>/paper.md     full text
+  inbox.jsonl              papers discover listed (new / skipped)
+  notes/                   your own writing
+  .cache/                  index.db + PDFs, gitignored
+```
 
-`corpus/sources/*.yaml` are the seed of truth; `papers/<id>/` holds the
-markdown/cards (and a PDF only when one was needed); `corpus/index.db` is
-derived and rebuilt from files. Large artifacts (PDFs, `.venv`, the index) are
-gitignored.
+## Where data comes from
+
+| What | Source |
+|---|---|
+| Metadata | arXiv API; Hugging Face Hub for AI summary, keywords and links, and for ids arXiv misses |
+| Full text | Hub markdown (`huggingface.co/papers/<id>.md`), else the PDF; web pages via [Jina Reader](https://jina.ai/reader), else your agent pipes the text in |
+| `discover` | [Semantic Scholar recommendations](https://api.semanticscholar.org/api-docs/recommendations): starred + recent papers as positives, skips as negatives |
+
+The Hub flattens tables; `paperdb text <id> --pdf` re-extracts from the PDF when
+the numbers matter.
+
+## Development
+
+Library code follows strict lints (no `unwrap`/`expect`/`panic!`, no slice
+indexing, no `unsafe`); see `[lints]` in `Cargo.toml`. Dependencies are kept
+to `rusqlite`, `serde`, `serde_json` and `thiserror`; HTTP and git go through
+the system `curl` and `git`.
+
+```bash
+cargo clippy --all-targets && cargo test
+```
