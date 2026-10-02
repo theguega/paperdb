@@ -142,8 +142,10 @@ fn read_page(url: &str) -> Option<String> {
 
 /// pymupdf4llm (via `uvx`, keeps tables as markdown) if uv is installed, else poppler's `pdftotext`.
 fn pdf_to_text(pdf: &Path) -> Result<(String, Via), String> {
-    const PY: &str = "import sys, pymupdf4llm; \
-        sys.stdout.write(pymupdf4llm.to_markdown(sys.argv[1], show_progress=False))";
+    // OCR off: pymupdf4llm turns it on whenever Tesseract is installed, and fails
+    // outright when Tesseract has no language data. arXiv PDFs have a text layer.
+    const PY: &str = "import sys, pymupdf4llm; sys.stdout.write(\
+        pymupdf4llm.to_markdown(sys.argv[1], show_progress=False, use_ocr=False))";
     let path = pdf.to_string_lossy();
     let tries: [(Via, &str, Vec<&str>); 2] = [
         (
@@ -152,7 +154,7 @@ fn pdf_to_text(pdf: &Path) -> Result<(String, Via), String> {
             vec![
                 "--quiet",
                 "--from",
-                "pymupdf4llm",
+                "pymupdf4llm==1.28.2", // pinned: same text on every machine
                 "python",
                 "-c",
                 PY,

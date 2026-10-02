@@ -528,8 +528,16 @@ fn sync(lib: &Library) -> Result<()> {
             "committed (no remote; add one with `git -C {} remote add origin <url>`)",
             lib.root().display()
         ),
-        SyncOutcome::UpToDate => out!("in sync"),
-        SyncOutcome::Pulled => out!("pulled changes; indexed {} papers", Index::rebuild(lib)?),
+        SyncOutcome::Remote {
+            pulled: 0,
+            pushed: 0,
+        } => out!("in sync"),
+        SyncOutcome::Remote { pulled, pushed } => {
+            out!("pulled {pulled}, pushed {pushed} commits");
+            if pulled > 0 {
+                out!("indexed {} papers", Index::rebuild(lib)?);
+            }
+        }
         _ => {}
     }
     Ok(())

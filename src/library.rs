@@ -206,15 +206,16 @@ impl Library {
         if git(&self.root, &["remote"])?.trim().is_empty() {
             return Ok(SyncOutcome::LocalOnly);
         }
-        let before = git(&self.root, &["rev-parse", "HEAD"])?;
-        git(&self.root, &["pull", "-q", "--rebase", "--autostash"])?;
-        git(&self.root, &["push", "-q"])?;
-        let after = git(&self.root, &["rev-parse", "HEAD"])?;
-        Ok(if before == after {
-            SyncOutcome::UpToDate
-        } else {
-            SyncOutcome::Pulled
-        })
+        git(&self.root, &["fetch", "-q"])?;
+        let pulled = count(&self.root, "HEAD..@{u}")?;
+        if pulled > 0 {
+            git(&self.root, &["pull", "-q", "--rebase", "--autostash"])?;
+        }
+        let pushed = count(&self.root, "@{u}..HEAD")?;
+        if pushed > 0 {
+            git(&self.root, &["push", "-q"])?;
+        }
+        Ok(SyncOutcome::Remote { pulled, pushed })
     }
 }
 
@@ -223,9 +224,17 @@ impl Library {
 pub enum SyncOutcome {
     /// No remote configured: committed locally only.
     LocalOnly,
-    UpToDate,
-    /// New commits arrived from the remote.
-    Pulled,
+    /// Commits received from and sent to the remote.
+    Remote { pulled: u32, pushed: u32 },
+}
+
+/// Number of commits in a revision range, e.g. `HEAD..@{u}`.
+fn count(dir: &Path, range: &str) -> Result<u32> {
+    let n = git(dir, &["rev-list", "--count", range])?;
+    n.trim().parse().map_err(|_| Error::Command {
+        cmd: format!("git rev-list --count {range}"),
+        detail: format!("unexpected output {n:?}"),
+    })
 }
 
 fn git(dir: &Path, args: &[&str]) -> Result<String> {
