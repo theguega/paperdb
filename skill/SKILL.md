@@ -8,7 +8,10 @@ description: "Theo's personal paper library (robotics: VLA, world models, RL, co
 `paperdb` is a CLI over a personal paper library: a git repo of plain files at
 `$PAPERDB_LIBRARY` (default `~/papers`). Every paper in it was chosen by the user,
 so do not add papers on your own initiative; propose, and add what they confirm.
-Run `paperdb help` for every flag.
+Run `paperdb` alone for the library's status (paper counts, inbox, unpushed
+commits), and `paperdb help` for every flag. Exit codes: 2 means fix the command,
+3 means the paper is not in the library (search for it), 4 means a network failure
+(retry later).
 
 ## Answer from the library
 
@@ -44,7 +47,8 @@ paperdb add https://www.pi.website/blog/pi05 --title "π0.5: ..." --name pi05-bl
 paperdb add https://example.org/report.pdf --title "Pinocchio: ..." --name pinocchio
 ```
 
-- `add` fetches metadata and full text, then commits. Output ends in `[text via hub]`,
+- `add` fetches metadata and full text, then commits. Adding a paper that is already
+  in the library prints `have <id>` and succeeds, so re-running an `add` is safe. Output ends in `[text via hub]`,
   `[text via pymupdf4llm]`, `[text via pdftotext]` or `[text via reader]` (web pages),
   or in `NO TEXT (...)`.
 - Given only a title (or a tweet, a talk), find the arXiv id yourself first, e.g.
@@ -55,8 +59,8 @@ paperdb add https://example.org/report.pdf --title "Pinocchio: ..." --name pinoc
 - `NO TEXT` on a web page means the site blocked the reader. Fetch the page with your
   own web tools and pipe its main text in as markdown: `paperdb text <id> - <<'EOF'`.
 - Give a `--name` (the short handle people use: "pi0", "DreamerV3", "OpenVLA").
-- Tags: lowercase slugs. Run `paperdb search "" --limit 500 --json` and reuse the
-  existing tags rather than inventing near-duplicates. `starred` marks the
+- Tags: lowercase slugs. Run `paperdb tags` and reuse the existing tags rather
+  than inventing near-duplicates. `starred` marks the
   user's key papers (it also steers `discover`); only set it when they say so.
 - Edit later with `paperdb tag <id> +t -t`, `paperdb name <id> X`, `paperdb note <id> "..."`.
 - After adding, write a card (below) unless the user is adding many at once and

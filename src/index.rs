@@ -152,6 +152,41 @@ impl Index {
         })?;
         Ok(rows.collect::<rusqlite::Result<_>>()?)
     }
+
+    /// Every tag in use with its paper count, most used first.
+    pub fn tags(&self) -> Result<Vec<(String, u32)>> {
+        let mut stmt = self.conn.prepare(
+            "SELECT t.value, count(*) AS n FROM papers p, json_each(p.tags) t
+             GROUP BY t.value ORDER BY n DESC, t.value",
+        )?;
+        let rows = stmt.query_map([], |r| Ok((r.get(0)?, r.get(1)?)))?;
+        Ok(rows.collect::<rusqlite::Result<_>>()?)
+    }
+
+    /// Paper counts for the status view.
+    pub fn stats(&self) -> Result<Stats> {
+        Ok(self.conn.query_row(
+            "SELECT count(*), count(*) - coalesce(sum(has_text), 0),
+                    coalesce(sum(has_text AND NOT has_card), 0)
+             FROM papers",
+            [],
+            |r| {
+                Ok(Stats {
+                    papers: r.get(0)?,
+                    no_text: r.get(1)?,
+                    no_card: r.get(2)?,
+                })
+            },
+        )?)
+    }
+}
+
+#[derive(Debug, Clone, Copy, Serialize)]
+pub struct Stats {
+    pub papers: u32,
+    pub no_text: u32,
+    /// Papers with text but no card (what `card todo` lists).
+    pub no_card: u32,
 }
 
 fn insert(tx: &rusqlite::Transaction<'_>, p: &Paper, text: Option<&str>) -> Result<()> {

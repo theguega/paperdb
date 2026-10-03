@@ -39,12 +39,27 @@ pub enum Error {
     Unknown(String),
     #[error("no text for {id}: {why}")]
     NoText { id: String, why: String },
-    #[error("{0} is already in the library")]
-    Exists(String),
     #[error("no library at {} (run `paperdb init`, or set PAPERDB_LIBRARY)", .0.display())]
     NoLibrary(PathBuf),
+    #[error("{failed} of {total} not added (errors above)")]
+    Partial { failed: usize, total: usize },
     #[error("{0}")]
     Usage(String),
+}
+
+impl Error {
+    /// Process exit code, so a caller can tell "fix the command" from "retry later":
+    /// 2 bad usage, 3 not in the library, 4 network, 1 anything else.
+    #[must_use]
+    pub fn exit_code(&self) -> u8 {
+        match self {
+            Self::Usage(_) | Self::BadRef(_) | Self::BadTag(_) | Self::NoLibrary(_) => 2,
+            Self::NotFound(_) => 3,
+            Self::Http { .. } => 4,
+            Self::Command { cmd, .. } if cmd.starts_with("curl ") => 4,
+            _ => 1,
+        }
+    }
 }
 
 pub type Result<T, E = Error> = std::result::Result<T, E>;

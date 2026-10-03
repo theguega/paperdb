@@ -37,6 +37,8 @@ const HELP: &str = "\
 paperdb - personal paper library
 
 Library: $PAPERDB_LIBRARY or ~/papers (a git repo of plain files).
+Run with no arguments for the library's status.
+Exit codes: 0 ok, 1 error, 2 bad usage, 3 paper not in library, 4 network.
 
   init [<git-url>]                 create a library, or clone yours on a new machine
   add <ref>... [--name N] [--tag T]... [--note TEXT] [--link URL]...
@@ -45,6 +47,7 @@ Library: $PAPERDB_LIBRARY or ~/papers (a git repo of plain files).
                                    blog post, report, or paper not on arXiv
   rm <id>...
   search [text] [--where SQL] [--tag T]... [--limit N] [--json]
+  tags [--json]                    tags in use, with paper counts
   show <id> [--text] [--json]
   tag <id> [+]tag... -tag...       add / remove tags
   name <id> <short-name>
@@ -71,7 +74,10 @@ fn main() -> ExitCode {
         Ok(()) => ExitCode::SUCCESS,
         Err(e) => {
             eprintln!("paperdb: {e}");
-            ExitCode::FAILURE
+            if let Error::NotFound(r) = &e {
+                eprintln!("try `paperdb search {r}`");
+            }
+            ExitCode::from(e.exit_code())
         }
     }
 }
@@ -83,11 +89,10 @@ enum Output {
 }
 
 fn run(raw: &[String]) -> Result<()> {
-    let Some((cmd, rest)) = raw.split_first() else {
-        out_raw!("{HELP}");
-        return Ok(());
-    };
     let root = Library::default_root()?;
+    let Some((cmd, rest)) = raw.split_first() else {
+        return status(&root);
+    };
     let lib = || Library::open(&root);
     match cmd.as_str() {
         "help" | "-h" | "--help" => out_raw!("{HELP}"),
@@ -109,6 +114,7 @@ fn run(raw: &[String]) -> Result<()> {
             &lib()?,
             &Args::parse(rest, &["--where", "--tag", "--limit"], &["--json"])?,
         )?,
+        "tags" => tags(&lib()?, &Args::parse(rest, &[], &["--json"])?)?,
         "show" | "open" => show(&lib()?, &Args::parse(rest, &[], &["--text", "--json"])?)?,
         "tag" => tag(&lib()?, &Args::parse(rest, &[], &[])?)?,
         "name" => name(&lib()?, &Args::parse(rest, &[], &[])?)?,
@@ -127,6 +133,61 @@ fn run(raw: &[String]) -> Result<()> {
             )));
         }
     }
+    Ok(())
+}
+
+/// Bare `paperdb`: what is in the library and what needs doing, without network calls.
+fn status(root: &std::path::Path) -> Result<()> {
+    let lib = match Library::open(root) {
+        Ok(lib) => lib,
+        Err(Error::NoLibrary(_)) => {
+            out!("no library at {}", root.display());
+            out!("next: `paperdb init` (or `paperdb init <git-url>`); `paperdb help` for commands");
+            return Ok(());
+        }
+        Err(e) => return Err(e),
+    };
+    let st = Index::open(&lib)?.stats()?;
+    out!(
+        "library  {}  {} papers · {} without card · {} without text",
+        root.display(),
+        st.papers,
+        st.no_card,
+        st.no_text
+    );
+    let pending = Inbox::load(&lib)?.pending().len();
+    out!(
+        "inbox    {pending} to triage{}",
+        if pending > 0 {
+            " (`paperdb inbox`)"
+        } else {
+            ""
+        }
+    );
+    match lib.unpushed() {
+        None => out!("git      no remote"),
+        Some(0) => out!("git      up to date with last fetch"),
+        Some(n) => out!("git      {n} unpushed commits (`paperdb sync`)"),
+    }
+    if st.no_card > 0 {
+        out!("next: `paperdb card todo` lists papers to card");
+    }
+    out!("`paperdb help` for commands");
+    Ok(())
+}
+
+fn tags(lib: &Library, a: &Args) -> Result<()> {
+    let tags = Index::open(lib)?.tags()?;
+    if a.output() == Output::Json {
+        return print_json(&tags.into_iter().collect::<BTreeMap<_, _>>());
+    }
+    for (t, n) in &tags {
+        out!("{n:4} {t}");
+    }
+    out!(
+        "{} tags; filter with `paperdb search --tag <t>`",
+        tags.len()
+    );
     Ok(())
 }
 
@@ -163,11 +224,13 @@ fn add(lib: &Library, a: &Args) -> Result<()> {
         }
         // One bad reference must not lose the others: report it and keep going.
         match add_one(lib, r, a, &tags) {
-            Ok(id) => {
+            Ok((id, fresh)) => {
                 if let PaperId::Arxiv(aid) = &id {
                     inbox.take(aid);
                 }
-                added.push(id);
+                if fresh {
+                    added.push(id);
+                }
             }
             Err(e) => {
                 eprintln!("paperdb: {r}: {e}");
@@ -178,16 +241,25 @@ fn add(lib: &Library, a: &Args) -> Result<()> {
     inbox.save(lib)?;
     lib.commit(&format!("add {}", join_ids(&added)))?;
     if failed > 0 {
-        return Err(usage(&format!("{failed} of {} not added", a.pos.len())));
+        return Err(Error::Partial {
+            failed,
+            total: a.pos.len(),
+        });
+    }
+    if let [id] = added.as_slice() {
+        out!("next: `paperdb card schema`, then `paperdb card set {id}`");
     }
     Ok(())
 }
 
-fn add_one(lib: &Library, r: &str, a: &Args, tags: &[Tag]) -> Result<PaperId> {
+/// The paper's id, and whether it is new: adding a paper that is already in the
+/// library is not an error, so a repeated `add` is safe.
+fn add_one(lib: &Library, r: &str, a: &Args, tags: &[Tag]) -> Result<(PaperId, bool)> {
     let mut paper = match PaperId::parse(r) {
         Ok(PaperId::Arxiv(aid)) if a.one("--title").is_none() => {
-            if lib.contains(&PaperId::Arxiv(aid.clone())) {
-                return Err(Error::Exists(aid.to_string()));
+            let id = PaperId::Arxiv(aid.clone());
+            if lib.contains(&id) {
+                return Ok(already(lib, id));
             }
             ingest::describe(&aid, Day::today())?
         }
@@ -196,7 +268,7 @@ fn add_one(lib: &Library, r: &str, a: &Args, tags: &[Tag]) -> Result<PaperId> {
     };
     let id = paper.id();
     if lib.contains(&id) {
-        return Err(Error::Exists(id.to_string()));
+        return Ok(already(lib, id));
     }
     if let Some(n) = a.one("--name") {
         n.clone_into(&mut paper.name);
@@ -214,7 +286,16 @@ fn add_one(lib: &Library, r: &str, a: &Args, tags: &[Tag]) -> Result<PaperId> {
         Err(e) => format!("NO TEXT ({e})"),
     };
     out!("added {id}  {}  [{via}]", paper.label());
-    Ok(id)
+    Ok((id, true))
+}
+
+fn already(lib: &Library, id: PaperId) -> (PaperId, bool) {
+    let label = lib
+        .load(&id)
+        .map(|p| p.label().to_owned())
+        .unwrap_or_default();
+    out!("have  {id}  {label}  [already in library; edit with tag/name/note]");
+    (id, false)
 }
 
 fn web_paper(url: &str, a: &Args) -> Result<Paper> {
@@ -512,13 +593,21 @@ fn skip(lib: &Library, a: &Args) -> Result<()> {
             .map(|s| paperdb::ArxivId::parse(s))
             .collect::<Result<_>>()?
     };
+    // Skipping is idempotent; an id the inbox never listed is reported, not fatal,
+    // so one stale id does not lose the others.
+    let mut skipped = 0;
     for id in &ids {
-        if !inbox.skip(id) {
-            return Err(usage(&format!("{id} is not in the inbox")));
+        if inbox.skip(id) {
+            skipped += 1;
+        } else {
+            eprintln!("paperdb: {id} is not in the inbox; ignored");
         }
     }
     inbox.save(lib)?;
-    out!("skipped {}", ids.len());
+    out!(
+        "skipped {skipped}; {} left to triage",
+        inbox.pending().len()
+    );
     lib.commit("skip")
 }
 

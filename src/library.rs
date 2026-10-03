@@ -217,6 +217,13 @@ impl Library {
         }
         Ok(SyncOutcome::Remote { pulled, pushed })
     }
+
+    /// Local commits not on the upstream yet, as of the last fetch (no network).
+    /// `None` when the folder has no remote or upstream branch.
+    #[must_use]
+    pub fn unpushed(&self) -> Option<u32> {
+        count(&self.root, "@{u}..HEAD").ok()
+    }
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
