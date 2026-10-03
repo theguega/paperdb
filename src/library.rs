@@ -5,7 +5,6 @@
 //!   papers/<id>/paper.json   the record (meta, tags, note, card)
 //!   papers/<id>/paper.md     full text
 //!   inbox.jsonl              discovered candidates, one per line
-//!   notes/                   your own writing
 //!   .cache/                  index.db, PDFs (gitignored, rebuilt on demand)
 //! ```
 
@@ -58,12 +57,9 @@ impl Library {
         let lib = Self {
             root: root.to_owned(),
         };
-        for dir in ["papers", "notes"] {
-            let p = root.join(dir);
-            io(fs::create_dir_all(&p), &p)?;
-        }
+        let papers = root.join("papers");
+        io(fs::create_dir_all(&papers), &papers)?;
         write_atomic(&root.join("papers/.keep"), "")?;
-        write_atomic(&root.join("notes/.keep"), "")?;
         write_atomic(&root.join(".gitignore"), GITIGNORE)?;
         git(root, &["init", "-q"])?;
         lib.commit("init library")?;

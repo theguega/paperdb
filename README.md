@@ -50,7 +50,6 @@ answering from the papers.
   papers/<id>/paper.json   record: source, title, name, authors, tags, note, card
   papers/<id>/paper.md     full text
   inbox.jsonl              papers discover listed (new / skipped)
-  notes/                   your own writing
   .cache/                  index.db + PDFs, gitignored
 ```
 
