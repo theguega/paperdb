@@ -1,6 +1,6 @@
 ---
 name: paperdb
-description: "Theo's personal paper library (robotics: VLA, world models, RL, control). Use to (1) search or answer questions from papers he has saved; (2) add a paper he mentions or links (arXiv id/URL, HF paper URL, PDF); (3) look for new papers and triage the inbox; (4) fill structured cards for papers. Triggers: 'paperdb', 'my papers', 'add this paper', 'what does <paper> say', 'find papers on <topic>', 'anything new on <topic>', an arXiv or huggingface.co/papers link."
+description: "Personal paper researcher library. Use to (1) search or answer questions from papers he has saved; (2) add a paper he mentions or links (arXiv id/URL, HF paper URL, PDF); (3) look for new papers and triage the inbox; (4) fill structured cards for papers. Triggers: 'paperdb', 'my papers', 'add this paper', 'what does <paper> say', 'find papers on <topic>', 'anything new on <topic>', an arXiv or huggingface.co/papers link."
 ---
 
 # paperdb
